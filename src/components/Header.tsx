@@ -2,7 +2,17 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>Header</div>
+    <>
+      <img src="" alt="" />
+
+      <ul>
+        <li>About</li>
+        <li>Skills</li>
+        <li>Projets</li>
+      </ul>
+
+      <p>Dark mode</p>
+    </>
   )
 }
 
