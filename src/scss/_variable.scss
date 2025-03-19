@@ -1,13 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
 
-.quicksand {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-$device-size: (
+$device_size: (
   "desktop": 1120px,
   "tablet": 744px,
   "mobile": 380px,
@@ -25,15 +18,7 @@ $weight: (
   "900": 900,
 );
 
-@each $value in $weight {
-  .kanit-thin-#{value} {
-    font-family: "Kanit", sans-serif;
-    font-weight: $value;
-    font-style: normal;
-  }
-}
-
-$font-size: (
+$font_size: (
   "h1": 2.98rem,
   "h2": 2.48rem,
   "h3": 2.07rem,

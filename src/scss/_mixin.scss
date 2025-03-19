@@ -1,0 +1,18 @@
+@use "./variable" as var;
+
+@mixin bread_text($size: map-get(var.$font_size, "p")) {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+  font-weight: 400;
+  font-size: $size;
+}
+
+@mixin head_title($size: map-get(var.$font_size, "p"), $weight: map-get(var.$weight, "400")) {
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
+  
+  font-weight: 100;
+  font-size: 1rem;
+}

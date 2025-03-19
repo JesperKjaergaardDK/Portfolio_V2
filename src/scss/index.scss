@@ -1,5 +1,1 @@
-@use "./variable" as var;
-
-body {
-  background-color: map-get(var.$colors, "bg-primary");
-}
+@use "./global"

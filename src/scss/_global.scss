@@ -1,0 +1,31 @@
+@use "./collection" as col;
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  background-color: map-get(col.$colors, "bg-primary");
+ 
+  width: auto;
+  padding-inline: map-get(col.$spacing, "md");
+
+  @media (min-width: (map-get(col.$device_size, "mobile") + 100px)) {
+    width: map-get(col.$device_size, "mobile");
+  }
+
+  @media (min-width: (map-get(col.$device_size, "desktop") + 100px)) {
+    width: map-get(col.$device_size, "desktop");
+  }
+
+  margin: auto;
+  @include col.bread_text;
+  color: map-get(col.$colors, "primary-text");
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
