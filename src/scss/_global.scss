@@ -1,30 +1,31 @@
 @use "./collection" as col;
+@use "sass:map";
 
 //Basic style
 body {
   overflow-x: hidden;
   box-sizing: border-box;
-  padding: 0;
-  background-color: map-get(col.$colors, "bg-primary");
+  background-color: map.get(col.$colors, "bg-primary");
+  color: map.get(col.$colors, "primary-text");
 
   width: auto;
-  padding-inline: map-get(col.$spacing, "md");
-
-  @media (min-width: (map-get(col.$device_size, "mobile") + 100px)) {
-    min-width: map-get(col.$device_size, "mobile");
-  }
-
-  @media (min-width: (map-get(col.$device_size, "tablet") + 100px)) {
-    max-width: map-get(col.$device_size, "tablet");
-  }
-
-  @media (min-width: (map-get(col.$device_size, "desktop") + 100px)) {
-    max-width: map-get(col.$device_size, "desktop");
-  }
-
+  padding: 0;
   margin: auto;
+  padding-inline: map.get(col.$spacing, "md");
+
   @include col.bread_text;
-  color: map-get(col.$colors, "primary-text");
+
+  @media (min-width: (map.get(col.$device_size, "mobile") + 100px)) {
+    min-width: map.get(col.$device_size, "mobile");
+  }
+
+  @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+    max-width: map.get(col.$device_size, "tablet");
+  }
+
+  @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
+    max-width: map.get(col.$device_size, "desktop");
+  }
 }
 
 h1,
@@ -40,37 +41,37 @@ ul {
 
 h1 {
   @include col.head_title(
-    $size: map-get(col.$font_size, "h1"),
-    $weight: map-get(col.$weight, "600")
+    $size: map.get(col.$font_size, "h1"),
+    $weight: map.get(col.$weight, "600")
   );
 }
 h2 {
   @include col.head_title(
-    $size: map-get(col.$font_size, "h2"),
-    $weight: map-get(col.$weight, "600")
+    $size: map.get(col.$font_size, "h2"),
+    $weight: map.get(col.$weight, "600")
   );
 }
 h3 {
   @include col.head_title(
-    $size: map-get(col.$font_size, "h3"),
-    $weight: map-get(col.$weight, "600")
+    $size: map.get(col.$font_size, "h3"),
+    $weight: map.get(col.$weight, "600")
   );
 }
 h4 {
   @include col.head_title(
-    $size: map-get(col.$font_size, "h4"),
-    $weight: map-get(col.$weight, "600")
+    $size: map.get(col.$font_size, "h4"),
+    $weight: map.get(col.$weight, "600")
   );
 }
 h5 {
   @include col.head_title(
-    $size: map-get(col.$font_size, "h5"),
-    $weight: map-get(col.$weight, "600")
+    $size: map.get(col.$font_size, "h5"),
+    $weight: map.get(col.$weight, "600")
   );
 }
 
 .p_large {
-  @include col.bread_text(map-get(col.$font_size, "h6"));
+  @include col.bread_text(map.get(col.$font_size, "h6"));
 }
 
 ul {
@@ -84,7 +85,7 @@ ul {
   cursor: pointer;
 
   &-highlight {
-    box-shadow: 0 0 16px map-get(col.$colors, "primary-highlight");
+    box-shadow: 0 0 16px map.get(col.$colors, "primary-highlight");
   }
 
   &:hover {
