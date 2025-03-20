@@ -1,13 +1,20 @@
-
 interface Props {
   children: string;
-  isHighlight?: boolean;
+  is_highlight?: boolean;
 }
 
-function Button({children, isHighlight = false}: Props) {
-  return <>
-    <button className={isHighlight ? 'btnHighlight' : 'bntDeafult'} >{children}</button> 
-  </>;
+function Button({ children, is_highlight = false }: Props) {
+  return (
+    <>
+      <button
+        className={
+          is_highlight ? "bnt_deafult bnt_deafult-highlight" : "bnt_deafult"
+        }
+      >
+        {children}
+      </button>
+    </>
+  );
 }
 
 export default Button;

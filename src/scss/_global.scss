@@ -1,19 +1,25 @@
 @use "./collection" as col;
 
+//Basic style
 body {
+  overflow-x: hidden;
   box-sizing: border-box;
   padding: 0;
   background-color: map-get(col.$colors, "bg-primary");
- 
+
   width: auto;
   padding-inline: map-get(col.$spacing, "md");
 
   @media (min-width: (map-get(col.$device_size, "mobile") + 100px)) {
-    width: map-get(col.$device_size, "mobile");
+    min-width: map-get(col.$device_size, "mobile");
+  }
+
+  @media (min-width: (map-get(col.$device_size, "tablet") + 100px)) {
+    max-width: map-get(col.$device_size, "tablet");
   }
 
   @media (min-width: (map-get(col.$device_size, "desktop") + 100px)) {
-    width: map-get(col.$device_size, "desktop");
+    max-width: map-get(col.$device_size, "desktop");
   }
 
   margin: auto;
@@ -21,11 +27,68 @@ body {
   color: map-get(col.$colors, "primary-text");
 }
 
-h1,h2,h3,h4,h5,h6,p,ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
   margin: 0;
+}
+
+h1 {
+  @include col.head_title(
+    $size: map-get(col.$font_size, "h1"),
+    $weight: map-get(col.$weight, "600")
+  );
+}
+h2 {
+  @include col.head_title(
+    $size: map-get(col.$font_size, "h2"),
+    $weight: map-get(col.$weight, "600")
+  );
+}
+h3 {
+  @include col.head_title(
+    $size: map-get(col.$font_size, "h3"),
+    $weight: map-get(col.$weight, "600")
+  );
+}
+h4 {
+  @include col.head_title(
+    $size: map-get(col.$font_size, "h4"),
+    $weight: map-get(col.$weight, "600")
+  );
+}
+h5 {
+  @include col.head_title(
+    $size: map-get(col.$font_size, "h5"),
+    $weight: map-get(col.$weight, "600")
+  );
+}
+
+.p_large {
+  @include col.bread_text(map-get(col.$font_size, "h6"));
 }
 
 ul {
   list-style: none;
   padding: 0;
+}
+
+//Btn styling
+.bnt_deafult {
+  @include col.btn_deafult();
+  cursor: pointer;
+
+  &-highlight {
+    box-shadow: 0 0 16px map-get(col.$colors, "primary-highlight");
+  }
+
+  &:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+  }
 }
