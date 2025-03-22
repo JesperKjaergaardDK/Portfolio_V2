@@ -2,7 +2,8 @@
 @use "sass:map";
 
 .hero {
-  overflow-x: hidden;
+  margin: map.get(col.$spacing, "xl" );
+  margin-inline: 0;
 
   &__info {
     width: 100%;
