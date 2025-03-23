@@ -5,9 +5,7 @@
   margin: map.get(col.$spacing, "xl");
   margin-inline: 0;
 
-  display: flex;
-  flex-direction: column;
-  gap: map.get(col.$spacing, "lg");
+  @include col.flex_direction(map.get(col.$spacing, "lg"), column);
 
   &__img {
     max-width: 100%;
@@ -16,18 +14,14 @@
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    gap: map.get(col.$spacing, "lg");
+    @include col.flex_direction(map.get(col.$spacing, "lg"), column);
     @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
       flex-direction: row;
       align-items: center;
     }
   }
 
-  &__text {
-    display: flex;
-    flex-direction: column;
-    gap: map.get(col.$spacing, "lg");
+  &__text { 
+    @include col.flex_direction(map.get(col.$spacing, "lg"), column);
   }
 }

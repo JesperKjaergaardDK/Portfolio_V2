@@ -1,6 +1,14 @@
 @use "./variable" as var;
 @use "sass:map";
 
+//Flex
+@mixin flex_direction($gap ,$direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+} 
+
+
 //Fonts
 @mixin bread_text($size: map.get(var.$font_size, "p")) {
   font-family: "Quicksand", sans-serif;

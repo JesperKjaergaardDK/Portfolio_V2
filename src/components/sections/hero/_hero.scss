@@ -2,7 +2,7 @@
 @use "sass:map";
 
 .hero {
-  margin: map.get(col.$spacing, "xl" );
+  margin: map.get(col.$spacing, "xl");
   margin-inline: 0;
 
   &__info {
@@ -10,11 +10,10 @@
     padding: map.get(col.$spacing, "xl");
     padding-inline: 0;
 
-    display: flex;
-    flex-direction: column;
+    @include col.flex_direction(map.get(col.$spacing, "lg"), column);
+
     align-items: center;
     justify-content: center;
-    gap: map.get(col.$spacing, "lg");
 
     h1 {
       text-align: center;
