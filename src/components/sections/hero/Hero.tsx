@@ -6,7 +6,16 @@ function Hero() {
     <section className="hero">
       <div className="hero__info">
         <h1>
-          Hi, I’m <span className="hero__info-highlight">Jesper</span> Kjærgaard
+          Hi, I’m{" "}
+          <span className="hero__info-highlight">
+            <span>J</span>
+            <span>e</span>
+            <span>s</span>
+            <span>p</span>
+            <span>e</span>
+            <span>r</span>
+          </span>{" "}
+          Kjærgaard
         </h1>
         <p className="p_large">
           I'm a certified Data Technician specializing in programming, now

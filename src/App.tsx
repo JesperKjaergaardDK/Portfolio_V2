@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "./components/sections/header/Header";
 import Hero from "./components/sections/hero/Hero";
 import About from "./components/sections/about/About";
 import Skills from "./components/Skills";
@@ -11,7 +11,7 @@ function App() {
       <Header></Header>
       <Hero></Hero>
       <About></About>
-     {/*  <Skills></Skills>
+      {/*  <Skills></Skills>
       <Projects></Projects>
       <Footer></Footer> */}
     </>

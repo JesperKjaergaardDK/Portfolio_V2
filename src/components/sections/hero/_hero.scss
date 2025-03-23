@@ -1,14 +1,23 @@
 @use "../../../scss/collection" as col;
 @use "sass:map";
 
+@keyframes wave__effect {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+}
+
 .hero {
   margin: map.get(col.$spacing, "xl");
   margin-inline: 0;
 
   &__info {
     width: 100%;
-    padding: map.get(col.$spacing, "xl");
-    padding-inline: 0;
+    padding-bottom: map.get(col.$spacing, "xl");
 
     @include col.flex_direction(map.get(col.$spacing, "lg"), column);
 
@@ -29,6 +38,16 @@
 
     &-highlight {
       color: map.get(col.$colors, "primary-highlight");
+      
+      span {
+        @for $i from 1 through 6 {
+          &:nth-child(#{$i}) {
+            display: inline-block;
+            animation: wave__effect 2.5s ease-in-out infinite;
+            animation-delay: #{$i * 0.2}s;
+          }
+        }
+      }
     }
   }
 

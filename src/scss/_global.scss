@@ -1,6 +1,7 @@
 @use "./collection" as col;
 @use "sass:map";
 
+
 //Basic style
 body {
   overflow-x: hidden;
@@ -11,7 +12,6 @@ body {
   width: auto;
   padding: 0;
   margin: auto;
-  padding-inline: map.get(col.$spacing, "md");
 
   @include col.bread_text;
 
@@ -26,6 +26,10 @@ body {
   @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
     max-width: map.get(col.$device_size, "desktop");
   }
+}
+
+section {
+  padding-inline: map.get(col.$spacing, "md");
 }
 
 h1,
@@ -83,17 +87,33 @@ ul {
   padding: 0;
 }
 
+a {
+  color: map.get(col.$colors, "primary-text");
+  text-decoration-color: rgba(0, 0, 0, 0);
+  font-size: map.get(col.$font_size, "h6");
+
+  &:hover {
+    transition: color 0.35s ease-in-out, text-decoration-color 0.35s ease-in-out;
+    text-decoration-color: map.get(col.$colors, "primary-highlight");
+    text-decoration-thickness: 2px;
+    color: map.get(col.$colors, "primary-highlight");
+  }
+}
+
 //Btn styling
 .bnt_deafult {
   @include col.btn_deafult();
   cursor: pointer;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(0, 0, 0, 0);
 
   &-highlight {
     box-shadow: 0 0 16px map.get(col.$colors, "primary-highlight");
   }
 
   &:hover {
-    text-decoration-line: underline;
+    transition: text-decoration-color 0.35s ease-in-out;
+    text-decoration-color: map.get(col.$colors, "primary-text");
     text-decoration-thickness: 2px;
   }
 }

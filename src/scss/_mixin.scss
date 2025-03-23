@@ -2,12 +2,11 @@
 @use "sass:map";
 
 //Flex
-@mixin flex_direction($gap ,$direction: row) {
+@mixin flex_direction($gap, $direction: row) {
   display: flex;
   flex-direction: $direction;
   gap: $gap;
-} 
-
+}
 
 //Fonts
 @mixin bread_text($size: map.get(var.$font_size, "p")) {
@@ -30,12 +29,12 @@
   font-size: $size;
 }
 
-
 //Btn
 @mixin btn_deafult() {
   width: fit-content;
   background: map.get(var.$colors, "gradient");
   color: map.get(var.$colors, "primary-text");
+  
   border: none;
   border-radius: map.get(var.$spacing, "sm");
   padding: map.get(var.$spacing, "md") map.get(var.$spacing, "md");
@@ -43,5 +42,5 @@
   @include head_title(
     $size: map.get(var.$font_size, "h6"),
     $weight: map.get(var.$weight, "600")
-  );
+  ); 
 }
