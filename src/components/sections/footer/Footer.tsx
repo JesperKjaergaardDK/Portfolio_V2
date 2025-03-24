@@ -10,45 +10,45 @@ import address from "../../../assets/icons/footer/icons8-location-32.png";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer__logo-container">
-        <img className="footer__logo" src={logo} alt="logo" />
-        <div className="footer__socials">
-          <a href="https://www.linkedin.com/in/jesper-kj%C3%A6rgaard-b61251235/">
-            <img src={linkedin} alt="linkedin" />
-          </a>
-          <a href="https://github.com/JesperKjaergaardDK">
-            <img src={github} alt="github" />
-          </a>
+    <footer>
+      <div className="footer">
+        <div className="footer__logo-container">
+          <img className="footer__logo" src={logo} alt="logo" />
+          <div className="footer__socials">
+            <a href="https://www.linkedin.com/in/jesper-kj%C3%A6rgaard-b61251235/">
+              <img src={linkedin} alt="linkedin" />
+            </a>
+            <a href="https://github.com/JesperKjaergaardDK">
+              <img src={github} alt="github" />
+            </a>
+          </div>
         </div>
-      </div>
-
-      <nav className="footer__nav">
-        <h6>Navigation</h6>
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Skills</a>
-          </li>
-          <li>
-            <a href="#">Projets</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div className="footer__contact">
-        <h6>Contact</h6>
-        <Contact src={mail} alt="E-mail">
-          jezper@hotmail.dk
-        </Contact>
-        <Contact src={phone} alt="phone">
-          52 38 56 18
-        </Contact>
-        <Contact src={address} alt="address">
-          Jylland Viborg
-        </Contact>
+        <nav className="footer__nav">
+          <h6>Navigation</h6>
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Skills</a>
+            </li>
+            <li>
+              <a href="#">Projets</a>
+            </li>
+          </ul>
+        </nav>
+        <div className="footer__contact">
+          <h6>Contact</h6>
+          <Contact src={mail} alt="E-mail">
+            jezper@hotmail.dk
+          </Contact>
+          <Contact src={phone} alt="phone">
+            52 38 56 18
+          </Contact>
+          <Contact src={address} alt="address">
+            Jylland Viborg
+          </Contact>
+        </div>
       </div>
     </footer>
   );

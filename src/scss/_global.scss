@@ -3,16 +3,40 @@
 
 //Basic style
 body {
+  margin: 0;
   overflow-x: hidden;
   box-sizing: border-box;
   background-color: map.get(col.$colors, "bg-primary");
   color: map.get(col.$colors, "primary-text");
 
-  width: auto;
-  padding: 0;
-  margin: auto;
-
   @include col.bread_text;
+}
+
+footer {
+  background-color: map.get(col.$colors, "dark-bg-primary");
+}
+
+header {
+  @media (min-width: (map.get(col.$device_size, "mobile") + 100px)) {
+    min-width: map.get(col.$device_size, "mobile");
+  }
+
+  @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+    padding-top: map.get(col.$spacing, "xl");
+    padding-inline: map.get(col.$spacing, "md");
+    margin-inline: auto;
+    max-width: map.get(col.$device_size, "tablet");
+  }
+
+  @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
+    max-width: map.get(col.$device_size, "desktop");
+  }
+}
+
+section {
+  padding-inline: map.get(col.$spacing, "md");
+  margin: map.get(col.$spacing, "xl");
+  margin-inline: auto;
 
   @media (min-width: (map.get(col.$device_size, "mobile") + 100px)) {
     min-width: map.get(col.$device_size, "mobile");
@@ -25,12 +49,6 @@ body {
   @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
     max-width: map.get(col.$device_size, "desktop");
   }
-}
-
-section {
-  padding-inline: map.get(col.$spacing, "md");
-  margin: map.get(col.$spacing, "xl");
-  margin-inline: 0;
 }
 
 h1,

@@ -6,11 +6,26 @@
   align-items: center;
 }
 
+
+
 .footer {
-  background-color: map.get(col.$colors, "dark-bg-primary");
+ margin-inline: auto;
+  @media (min-width: (map.get(col.$device_size, "mobile") + 100px)) {
+    min-width: map.get(col.$device_size, "mobile");
+  }
+
+  @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+    max-width: map.get(col.$device_size, "tablet");
+  }
+
+  @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
+    max-width: map.get(col.$device_size, "desktop");
+  }
+
+
   @include col.flex_direction(map.get(col.$spacing, "xl"), column);
   align-items: center;
-  padding: map-get(col.$spacing, "xl");
+  padding: map.get(col.$spacing, "xl");
   padding-inline: 0;
 
   @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
@@ -38,10 +53,6 @@
   }
 
   &__contact {
-    img {
-      //width: 32px
-    }
-
     @include col.flex_direction(map.get(col.$spacing, "sm"), column);
     align-items: center;
     @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {

@@ -24,7 +24,7 @@
       justify-content: space-between;
 
       padding: map.get(col.$spacing, "sm") map.get(col.$spacing, "md");
-      margin-top: map.get(col.$spacing, "xl");
+
       border: 1px solid white;
       border-radius: map.get(col.$spacing, "lg");
     }
