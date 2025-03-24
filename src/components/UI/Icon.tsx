@@ -8,7 +8,7 @@ interface props {
 function Icon(prop: props) {
   return (
     <div className="skills__icon">
-      <h6>{prop.icon_name}</h6>
+      <p>{prop.icon_name}</p>
       <img src={prop.src} alt={prop.alt} />
     </div>
   );
