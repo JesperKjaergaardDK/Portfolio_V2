@@ -3,11 +3,10 @@ import { icons_code, icons_design } from "../../../utils/icon_list.json";
 
 function Skills() {
   return (
-    <section className="skills">
+    <section id="skills" className="skills">
       <h2 className="text_center">My Toolbox</h2>
 
       <div className="skills__container">
-
         <div className="skills__code">
           <h6>Development</h6>
           <div className="skills__collection">
@@ -35,9 +34,7 @@ function Skills() {
             ))}
           </div>
         </div>
-
       </div>
-
     </section>
   );
 }

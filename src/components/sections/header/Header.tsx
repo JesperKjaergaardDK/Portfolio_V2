@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../../../assets/Logo png Ps.png";
 
 function Header() {
@@ -14,13 +13,13 @@ function Header() {
           <nav className="header__nav">
             <ul>
               <li>
-                <a href="#">About</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a href="#">Skills</a>
+                <a href="#skills">Skills</a>
               </li>
               <li>
-                <a href="#">Projets</a>
+                <a href="#projects">Projets</a>
               </li>
             </ul>
           </nav>

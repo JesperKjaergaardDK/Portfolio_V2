@@ -6,10 +6,13 @@
   align-items: center;
 }
 
-
-
 .footer {
- margin-inline: auto;
+  @include col.flex_direction(map.get(col.$spacing, "xl"), column);
+  align-items: center;
+  padding: map.get(col.$spacing, "xl");
+  padding-inline: 0;
+  margin-inline: auto;
+
   @media (min-width: (map.get(col.$device_size, "mobile") + 100px)) {
     min-width: map.get(col.$device_size, "mobile");
   }
@@ -22,12 +25,6 @@
     max-width: map.get(col.$device_size, "desktop");
   }
 
-
-  @include col.flex_direction(map.get(col.$spacing, "xl"), column);
-  align-items: center;
-  padding: map.get(col.$spacing, "xl");
-  padding-inline: 0;
-
   @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
     flex-direction: row;
     justify-content: space-between;
@@ -37,10 +34,22 @@
   &__logo-container {
     @include col.flex_direction(map.get(col.$spacing, "sm"), column);
     align-items: center;
+
+    @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+      align-items: start;
+    }
   }
 
   &__socials {
     @include col.flex_direction(map.get(col.$spacing, "lg"));
+    img {
+      border-bottom: 2px solid rgba(255, 255, 255, 0);
+    }
+
+    img:hover {
+      transition: border-bottom 0.3s ease-in-out;
+      border-bottom: 2px solid map.get(col.$colors, "primary-highlight");
+    }
   }
 
   &__nav {

@@ -2,7 +2,7 @@ import aboutImg from "../../../assets/About images portfolios.png";
 
 function About() {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <h2 className="text_center">Who am i</h2>
 
       <div className="about__content">

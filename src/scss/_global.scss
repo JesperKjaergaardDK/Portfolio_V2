@@ -1,5 +1,8 @@
 @use "./collection" as col;
 @use "sass:map";
+html {
+  scroll-behavior: smooth;
+}
 
 //Basic style
 body {
@@ -35,7 +38,7 @@ header {
 
 section {
   padding-inline: map.get(col.$spacing, "md");
-  margin: map.get(col.$spacing, "xl");
+  margin: map.get(col.$spacing, "xxl");
   margin-inline: auto;
 
   @media (min-width: (map.get(col.$device_size, "mobile") + 100px)) {
@@ -115,7 +118,7 @@ ul {
 a {
   color: map.get(col.$colors, "primary-text");
   text-decoration-color: rgba(0, 0, 0, 0);
-  font-size: map.get(col.$font_size, "h6");
+  //font-size: map.get(col.$font_size, "h6");
 
   &:hover {
     transition: color 0.35s ease-in-out, text-decoration-color 0.35s ease-in-out;
