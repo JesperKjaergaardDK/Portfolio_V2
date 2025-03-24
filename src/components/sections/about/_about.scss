@@ -2,9 +2,6 @@
 @use "sass:map";
 
 .about {
-  margin: map.get(col.$spacing, "xl");
-  margin-inline: 0;
-
   @include col.flex_direction(map.get(col.$spacing, "lg"), column);
 
   &__img {

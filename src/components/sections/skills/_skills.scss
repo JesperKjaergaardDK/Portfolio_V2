@@ -1,0 +1,46 @@
+@use "../../../scss/collection" as col;
+@use "sass:map";
+
+.skills {
+  @include col.flex_direction(map.get(col.$spacing, "lg"), column);
+
+  &__container {
+    @include col.flex_direction(map.get(col.$spacing, "lg"), column);
+
+    @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__code,
+  &__design {
+    @include col.flex_direction(map.get(col.$spacing, "sm"), column);
+  }
+
+  &__code {
+    @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
+      grid-column: 1/7;
+    }
+  }
+
+  &__design {
+    @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
+      grid-column: 7/13;
+    }
+  }
+
+  &__collection {
+    background-color: map.get(col.$colors, "dark-bg-primary");
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 32px;
+    border-radius: 16px;
+    border: 2px solid map.get(col.$colors, "primary-text");
+  }
+
+  &__icon {
+    text-align: center;
+  }
+}

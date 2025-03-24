@@ -1,7 +1,6 @@
 @use "./collection" as col;
 @use "sass:map";
 
-
 //Basic style
 body {
   overflow-x: hidden;
@@ -30,6 +29,8 @@ body {
 
 section {
   padding-inline: map.get(col.$spacing, "md");
+  margin: map.get(col.$spacing, "xl");
+  margin-inline: 0;
 }
 
 h1,
@@ -70,6 +71,12 @@ h4 {
 h5 {
   @include col.head_title(
     $size: map.get(col.$font_size, "h5"),
+    $weight: map.get(col.$weight, "600")
+  );
+}
+h6 {
+  @include col.head_title(
+    $size: map.get(col.$font_size, "h6"),
     $weight: map.get(col.$weight, "600")
   );
 }
