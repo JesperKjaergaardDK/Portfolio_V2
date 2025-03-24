@@ -3,7 +3,7 @@ import Hero from "./components/sections/hero/Hero";
 import About from "./components/sections/about/About";
 import Skills from "./components/sections/skills/Skills";
 import Projects from "./components/Projects";
-import Footer from "./components/Footer";
+import Footer from "./components/sections/footer/Footer";
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <Hero></Hero>
       <About></About>
       <Skills></Skills>
-      {/* <Projects></Projects>
-      <Footer></Footer> */}
+      {/* <Projects></Projects> */}
+      <Footer></Footer>
     </>
   );
 }

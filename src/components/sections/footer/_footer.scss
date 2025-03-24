@@ -1,0 +1,51 @@
+@use "../../../scss/collection" as col;
+@use "sass:map";
+
+.contact {
+  @include col.flex_direction(map.get(col.$spacing, "sm"));
+  align-items: center;
+}
+
+.footer {
+  background-color: map.get(col.$colors, "dark-bg-primary");
+  @include col.flex_direction(map.get(col.$spacing, "xl"), column);
+  align-items: center;
+  padding: map-get(col.$spacing, "xl");
+  padding-inline: 0;
+
+  @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  &__logo-container {
+    @include col.flex_direction(map.get(col.$spacing, "sm"), column);
+    align-items: center;
+  }
+
+  &__socials {
+    @include col.flex_direction(map.get(col.$spacing, "lg"));
+  }
+
+  &__nav {
+    @include col.flex_direction(map.get(col.$spacing, "md"), column);
+
+    ul {
+      @include col.flex_direction(map.get(col.$spacing, "md"), column);
+      align-items: center;
+    }
+  }
+
+  &__contact {
+    img {
+      //width: 32px
+    }
+
+    @include col.flex_direction(map.get(col.$spacing, "sm"), column);
+    align-items: center;
+    @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+      align-items: start;
+    }
+  }
+}

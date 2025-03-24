@@ -15,3 +15,12 @@ Design
 <a target="_blank" href="https://icons8.com/icon/13631/adobe-illustrator">Adobe Illustrator</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <a target="_blank" href="https://icons8.com/icon/NeNPFdj7MzXi/adobe-photoshop">Adobe Photoshop</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <a target="_blank" href="https://icons8.com/icon/13675/adobe-indesign">Adobe Indesign</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+
+Footer
+<a target="_blank" href="https://icons8.com/icon/98960/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/62856/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a
+
+<a target="_blank" href="https://icons8.com/icon/78382/phone">Phone</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/86875/mail">Mail</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/85149/location">Location</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

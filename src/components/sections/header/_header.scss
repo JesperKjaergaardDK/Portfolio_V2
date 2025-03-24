@@ -2,19 +2,11 @@
 @use "sass:map";
 
 .header {
-  //border-bottom: 1px solid white;
-  // display: flex;
-
-  &__img {
-    width: 217px;
-    height: 55px;
-  }
-
   &__mobile {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
+    padding: map.get(col.$spacing, "md");
     border-bottom: 1px solid white;
 
     @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
@@ -31,10 +23,10 @@
       align-items: center;
       justify-content: space-between;
 
-      padding: 8px 16px;
-      margin-top: 40px;
+      padding: map.get(col.$spacing, "sm") map.get(col.$spacing, "md");
+      margin-top: map.get(col.$spacing, "xl");
       border: 1px solid white;
-      border-radius: 32px;
+      border-radius: map.get(col.$spacing, "lg");
     }
   }
 

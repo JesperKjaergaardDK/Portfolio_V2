@@ -2,37 +2,37 @@
   "icons_code": [
     {
       "icon_name": "HTML",
-      "src": "../src/assets/icons/icons8-html-64.png",
+      "src": "../src/assets/icons/skills/icons8-html-64.png",
       "alt": "Bootstrap"
     },
     {
       "icon_name": "CSS",
-      "src": "../src/assets/icons/icons8-css-64.png",
+      "src": "../src/assets/icons/skills/icons8-css-64.png",
       "alt": "Bootstrap"
     },
     {
       "icon_name": "JavaScript",
-      "src": "../src/assets/icons/icons8-js-64.png",
+      "src": "../src/assets/icons/skills/icons8-js-64.png",
       "alt": "Bootstrap"
     },
     {
       "icon_name": "TypeScript",
-      "src": "../src/assets/icons/icons8-typescript-64.png",
+      "src": "../src/assets/icons/skills/icons8-typescript-64.png",
       "alt": "Bootstrap"
     },
     {
       "icon_name": "Bootstrap",
-      "src": "../src/assets/icons/icons8-bootstrap-64.png",
+      "src": "../src/assets/icons/skills/icons8-bootstrap-64.png",
       "alt": "Bootstrap"
     },
     {
       "icon_name": "SASS",
-      "src": "../src/assets/icons/icons8-sass-64.png",
+      "src": "../src/assets/icons/skills/icons8-sass-64.png",
       "alt": "Bootstrap"
     },
     {
       "icon_name": "React",
-      "src": "../src/assets/icons/icons8-react-native-64.png",
+      "src": "../src/assets/icons/skills/icons8-react-native-64.png",
       "alt": "Bootstrap"
     }
   ],
@@ -40,22 +40,22 @@
   "icons_design": [
     {
       "icon_name": "Figma",
-      "src": "../src/assets/icons/icons8-figma-64.png",
+      "src": "../src/assets/icons/skills/icons8-figma-64.png",
       "alt": "Bootstrap"
     },
     {
       "icon_name": "Illustrator",
-      "src": "../src/assets/icons/icons8-adobe-illustrator-64.png",
+      "src": "../src/assets/icons/skills/icons8-adobe-illustrator-64.png",
       "alt": "Bootstrap"
     },
     {
       "icon_name": "Photoshop",
-      "src": "../src/assets/icons/icons8-adobe-photoshop-64.png",
+      "src": "../src/assets/icons/skills/icons8-adobe-photoshop-64.png",
       "alt": "Bootstrap"
     },
     {
       "icon_name": "Indesign",
-      "src": "../src/assets/icons/icons8-adobe-indesign-64.png",
+      "src": "../src/assets/icons/skills/icons8-adobe-indesign-64.png",
       "alt": "Bootstrap"
     }
   ]
