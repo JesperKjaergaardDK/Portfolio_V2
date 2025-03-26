@@ -135,14 +135,18 @@ a {
   cursor: pointer;
   text-decoration-line: underline;
   text-decoration-color: rgba(0, 0, 0, 0);
+  text-decoration-thickness: 2px;
+  transition: text-decoration-color 0.35s ease-in-out,
+    box-shadow 0.35s ease-in-out;
 
   &-highlight {
     box-shadow: 0 0 16px map.get(col.$colors, "primary-highlight");
   }
 
   &:hover {
-    transition: text-decoration-color 0.35s ease-in-out;
+    transition: text-decoration-color 0.35s ease-in-out,
+      box-shadow 0.35s ease-in-out;
     text-decoration-color: map.get(col.$colors, "primary-text");
-    text-decoration-thickness: 2px;
+    box-shadow: 0 0 16px map.get(col.$colors, "primary-highlight");
   }
 }
