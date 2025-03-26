@@ -22,7 +22,9 @@ function Hero() {
           shifting my focus to Frontend Development to craft seamless and
           engaging user experiences
         </p>
-        <Button is_highlight>See My Creations</Button>
+        <a href="#projects">
+          <Button is_highlight>See My Creations</Button>
+        </a>
       </div>
 
       <img

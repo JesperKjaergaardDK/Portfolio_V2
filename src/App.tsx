@@ -2,7 +2,7 @@ import Header from "./components/sections/header/Header";
 import Hero from "./components/sections/hero/Hero";
 import About from "./components/sections/about/About";
 import Skills from "./components/sections/skills/Skills";
-import Projects from "./components/Projects";
+import Projects from "./components/sections/projects/Projects";
 import Footer from "./components/sections/footer/Footer";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Hero></Hero>
       <About></About>
       <Skills></Skills>
-      {/* <Projects></Projects> */}
+      <Projects></Projects>
       <Footer></Footer>
     </>
   );
