@@ -35,10 +35,11 @@
   &__nav {
     ul {
       @include col.flex_direction(map.get(col.$spacing, "lg"), row);
-      
     }
     a {
-      font-size: map.get(col.$font_size, "h6");
-    }
+      @include col.head_title(
+        $size: map.get(col.$font_size, "h6"),
+        $weight: map.get(col.$weight, "600")
+      );    }
   }
 }

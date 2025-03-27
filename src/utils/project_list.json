@@ -2,18 +2,18 @@
   "projects": [
     {
       "title": "Vine&Vintage",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+      "description": "Vine & Vintages is an engaging website designed for a wine factory that offers immersive tours and hosts a variety of events. The platform is crafted with a user-friendly interface to showcase the rich history and craftsmanship behind the winery while inviting visitors to experience it firsthand.",
       "img": "src/assets/projects/Vine&Vintage.png",
-      "alt": "test",
+      "alt": "Project image of Vine&Vintage",
       "site": "https://vinevintages.jesperkjaergaard.dk/",
       "project_site": "http://localhost:5173/"
     },
     {
       "title": "Loopstudio",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+      "description": "This project is part of the Frontend Mentor initiative, where I was challenged to transform a given design into a fully functional website. The task at hand was to develop the homepage for LoopStudio, utilizing images and Figma designs as the blueprint.",
       "img": "src/assets/projects/Loopstudio.png",
-      "alt": "test",
-      "site": "https://vinevintages.jesperkjaergaard.dk/",
+      "alt": "Project image of Loopstudio",
+      "site": "https://loopstudios.jesperkjaergaard.dk/",
       "project_site": "http://localhost:5173/"
     }
   ]
