@@ -2,6 +2,8 @@
 @use "sass:map";
 
 .header {
+  background-color: map.get(col.$colors, "bg-primary");
+
   &__mobile {
     display: flex;
     align-items: center;
@@ -33,6 +35,10 @@
   &__nav {
     ul {
       @include col.flex_direction(map.get(col.$spacing, "lg"), row);
+      
+    }
+    a {
+      font-size: map.get(col.$font_size, "h6");
     }
   }
 }

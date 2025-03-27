@@ -21,16 +21,15 @@
     align-items: center;
     justify-content: center;
 
-    h1 {
+    /* h1 {
       text-align: center;
       @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
         text-align: start;
       }
-    }
+    } */
 
     @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
-      align-items: start;
-      grid-column: 1/7;
+      grid-column: 2/12;
     }
 
     &-highlight {
@@ -48,7 +47,7 @@
     }
   }
 
-  &__img {
+ /*  &__img {
     position: relative;
     left: -100px;
 
@@ -59,11 +58,10 @@
     @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
       grid-column: 7/13;
     }
-  }
+  } */
 
   @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
     display: grid;
-    gap: map.get(col.$spacing, "lg");
     grid-template-columns: repeat(12, 1fr);
   }
 }

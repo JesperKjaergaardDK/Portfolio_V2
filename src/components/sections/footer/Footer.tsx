@@ -1,6 +1,6 @@
 import Contact from "../../UI/Contact";
 
-import logo from "../../../assets/Logo png Ps.png";
+import logo from "../../../assets/Logo_png_ps.png";
 import github from "../../../assets/icons/footer/icons8-github-32.png";
 import linkedin from "../../../assets/icons/footer/icons8-linkedin-32.png";
 

@@ -1,11 +1,11 @@
 import Button from "../../UI/Button";
-import headImg from "../../../assets/Hand on chin hero img.png";
+import headImg from "../../../assets/Hand_on_chin_hero_img.png";
 
 function Hero() {
   return (
     <section className="hero">
       <div className="hero__info">
-        <h1>
+        <h1 className="text_center">
           Hi, I’m{" "}
           <span className="hero__info-highlight">
             <span>J</span>
@@ -27,11 +27,11 @@ function Hero() {
         </a>
       </div>
 
-      <img
+     {/*  <img
         className="hero__img"
         src={headImg}
         alt="Creater of the webstie with a closed hand on his chin looking a bit to the side"
-      />
+      /> */}
     </section>
   );
 }

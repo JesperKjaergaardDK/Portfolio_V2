@@ -1,5 +1,6 @@
 @use "./collection" as col;
 @use "sass:map";
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,8 +12,18 @@ body {
   box-sizing: border-box;
   background-color: map.get(col.$colors, "bg-primary");
   color: map.get(col.$colors, "primary-text");
-
   @include col.bread_text;
+
+  background-image: url(../assets/Android_homepage.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+ 
+  @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+    background-image: url(../assets/Desktop_homepage.jpg);
+  }
+  @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
+    background-image: url(../assets/Desktop_homepage.jpg);
+  }
 }
 
 footer {
@@ -118,7 +129,6 @@ ul {
 a {
   color: map.get(col.$colors, "primary-text");
   text-decoration-color: rgba(0, 0, 0, 0);
-  //font-size: map.get(col.$font_size, "h6");
   transition: color 0.35s ease-in-out, text-decoration-color 0.35s ease-in-out;
 
   &:hover {
