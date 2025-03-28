@@ -3,8 +3,13 @@
 
 .header {
   background-color: map.get(col.$colors, "bg-primary");
+  position: relative;
+  z-index: 1;
 
   &__mobile {
+    background-color: map.get(col.$colors, "bg-primary");
+    position: relative;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,10 +21,33 @@
     }
   }
 
+  &__dropdown {
+    position: absolute;
+    width: 100%;
+    background-color: map.get(col.$colors, "dark-bg-primary");
+    border-bottom: 1px solid white;
+    text-align: center;
+    @include col.head_title(
+      $size: map.get(col.$font_size, "h4"),
+      $weight: map.get(col.$weight, "600")
+    );
+    padding: map.get(col.$spacing, "xl");
+    padding-inline: 0;
+
+    @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+      display: none;
+    }
+
+    ul {
+      @include col.flex_direction(map.get(col.$spacing, "lg"), column);
+    }
+  }
+
   &__desktop {
     display: none;
 
     @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+      background-color: map.get(col.$colors, "bg-primary");
       width: 100%;
       display: flex;
       align-items: center;
@@ -40,6 +68,7 @@
       @include col.head_title(
         $size: map.get(col.$font_size, "h6"),
         $weight: map.get(col.$weight, "600")
-      );    }
+      );
+    }
   }
 }

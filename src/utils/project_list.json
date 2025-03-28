@@ -1,9 +1,17 @@
 {
   "projects": [
     {
+      "title": "Portfolio V1",
+      "description": "Vine & Vintages is an engaging website designed for a wine factory that offers immersive tours and hosts a variety of events. The platform is crafted with a user-friendly interface to showcase the rich history and craftsmanship behind the winery while inviting visitors to experience it firsthand.",
+      "img": "src/assets/projects/portfolio_V1/Portfolio_V1.png",
+      "alt": "Project image of Vine&Vintage",
+      "site": "https://vinevintages.jesperkjaergaard.dk/",
+      "project_site": "http://localhost:5173/"
+    },
+    {
       "title": "Vine&Vintage",
       "description": "Vine & Vintages is an engaging website designed for a wine factory that offers immersive tours and hosts a variety of events. The platform is crafted with a user-friendly interface to showcase the rich history and craftsmanship behind the winery while inviting visitors to experience it firsthand.",
-      "img": "src/assets/projects/Vine&Vintage.png",
+      "img": "src/assets/projects/vine&vintage/Vine&Vintage.png",
       "alt": "Project image of Vine&Vintage",
       "site": "https://vinevintages.jesperkjaergaard.dk/",
       "project_site": "http://localhost:5173/"
@@ -11,7 +19,7 @@
     {
       "title": "Loopstudio",
       "description": "This project is part of the Frontend Mentor initiative, where I was challenged to transform a given design into a fully functional website. The task at hand was to develop the homepage for LoopStudio, utilizing images and Figma designs as the blueprint.",
-      "img": "src/assets/projects/Loopstudio.png",
+      "img": "src/assets/projects/loopstudio/Loopstudio.png",
       "alt": "Project image of Loopstudio",
       "site": "https://loopstudios.jesperkjaergaard.dk/",
       "project_site": "http://localhost:5173/"
