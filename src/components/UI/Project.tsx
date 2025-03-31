@@ -1,16 +1,18 @@
 import Button from "./Button";
 
 
-
 interface props {
+  id: number;
   title: string;
   description: string;
   img: string;
-  site: string;
-  project_site: string;
+  alt: string;
+  website: string;
 }
 
 function Project(prop: props) {
+  const img_path = "src/assets/projects/";
+
   return (
     <div className="project">
       <div className="project__info">
@@ -18,17 +20,17 @@ function Project(prop: props) {
         <p>{prop.description}</p>
 
         <div className="project__cta">
-          <a href="#">
+          <a href={prop.website}>
             <Button>Visit site</Button>
           </a>
 
-          <a href="#">
+          <a href={`project/${prop.id}`}>
             <Button>Project details</Button>
           </a>
         </div>
       </div>
 
-      <img className="project__img" src={prop.img} alt="" />
+      <img className="project__img" src={`${img_path}${prop.img}`} alt="" />
     </div>
   );
 }

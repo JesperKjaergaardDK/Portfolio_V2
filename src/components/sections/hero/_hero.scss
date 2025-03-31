@@ -16,7 +16,7 @@
     width: 100%;
     padding-bottom: map.get(col.$spacing, "xl");
 
-    @include col.flex_direction(map.get(col.$spacing, "lg"), column);
+    @include col.flex_direction(map.get(col.$spacing, "lg"));
 
     align-items: center;
     justify-content: center;

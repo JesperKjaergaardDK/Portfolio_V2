@@ -2,7 +2,7 @@
 @use "sass:map";
 
 //Flex
-@mixin flex_direction($gap, $direction: row) {
+@mixin flex_direction($gap, $direction: column) {
   display: flex;
   flex-direction: $direction;
   gap: $gap;

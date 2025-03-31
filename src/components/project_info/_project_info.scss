@@ -1,0 +1,55 @@
+@use "../../scss/collection" as col;
+@use "sass:map";
+
+.project_info {
+  @include col.flex-direction(map.get(col.$spacing, "lg"));
+
+  &__img {
+    border: 2px solid white;
+    border-radius: map.get(col.$spacing, "md");
+  }
+
+  &__header {
+    @include col.flex-direction(map.get(col.$spacing, "lg"));
+    align-items: center;
+
+    @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    button {
+      width: 100%;
+      @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+        width: fit-content;
+      }
+    }
+  }
+
+  &__details {
+    @include col.flex-direction(map.get(col.$spacing, "lg"));
+
+    @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      
+      :nth-child(odd) {
+        grid-column: 1/7;
+      }
+
+      :nth-child(even) {
+        grid-column: 7/13;
+      }
+    }
+  }
+
+  &__tools {
+    @include col.flex-direction(map.get(col.$spacing, "lg"), row);
+    flex-wrap: wrap;
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}

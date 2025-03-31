@@ -2,11 +2,11 @@
 @use "sass:map";
 
 .projects {
-  @include col.flex_direction(map.get(col.$spacing, "xxl"), column);
+  @include col.flex_direction(map.get(col.$spacing, "xxl"));
 }
 
 .project {
-  @include col.flex_direction(map.get(col.$spacing, "lg"), column);
+  @include col.flex_direction(map.get(col.$spacing, "lg"));
 
   @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
     display: grid;
@@ -14,7 +14,7 @@
   }
 
   &__info {
-    @include col.flex_direction(map.get(col.$spacing, "md"), column);
+    @include col.flex_direction(map.get(col.$spacing, "md"));
 
     @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
       gap: map.get(col.$spacing, "lg");

@@ -27,6 +27,9 @@ function Footer() {
           <h6>Navigation</h6>
           <ul>
             <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
               <a href="#about">About</a>
             </li>
             <li>

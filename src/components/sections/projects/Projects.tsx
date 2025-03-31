@@ -5,18 +5,18 @@ function Projects() {
   return (
     <section id="projects" className="projects">
       <h2 className="text_center">My Work in Action</h2>
-      
+
       {projects.map((projects, index) => (
         <Project
           key={index}
+          id={projects.id}
           title={projects.title}
           description={projects.description}
           img={projects.img}
-          site={projects.site}
-          project_site={projects.project_site}
+          alt={projects.alt}
+          website={projects.website}
         />
-      ))}     
-
+      ))}
     </section>
   );
 }

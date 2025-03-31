@@ -2,10 +2,10 @@
 @use "sass:map";
 
 .skills {
-  @include col.flex_direction(map.get(col.$spacing, "lg"), column);
+  @include col.flex_direction(map.get(col.$spacing, "lg"));
 
   &__container {
-    @include col.flex_direction(map.get(col.$spacing, "lg"), column);
+    @include col.flex_direction(map.get(col.$spacing, "lg"));
 
     @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
       display: grid;
@@ -19,7 +19,7 @@
       width: 64px
     }
 
-    @include col.flex_direction(map.get(col.$spacing, "sm"), column);
+    @include col.flex_direction(map.get(col.$spacing, "sm"));
   }
 
   &__code {
@@ -45,7 +45,7 @@
   }
 
   &__icon {
-    @include col.flex_direction(map.get(col.$spacing, "xs"), column);
+    @include col.flex_direction(map.get(col.$spacing, "xs"));
     align-items: center
     ;
     transform: translateY(0);

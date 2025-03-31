@@ -2,7 +2,7 @@
 @use "sass:map";
 
 .about {
-  @include col.flex_direction(map.get(col.$spacing, "lg"), column);
+  @include col.flex_direction(map.get(col.$spacing, "lg"));
 
   &__img {
     max-width: 100%;
@@ -11,7 +11,7 @@
   }
 
   &__content {
-    @include col.flex_direction(map.get(col.$spacing, "lg"), column);
+    @include col.flex_direction(map.get(col.$spacing, "lg"));
     @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
       flex-direction: row;
       align-items: center;
@@ -19,6 +19,6 @@
   }
 
   &__text { 
-    @include col.flex_direction(map.get(col.$spacing, "lg"), column);
+    @include col.flex_direction(map.get(col.$spacing, "lg"));
   }
 }

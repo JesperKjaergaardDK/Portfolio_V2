@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: space-between;
     padding: map.get(col.$spacing, "md");
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 
     @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
       display: none;
@@ -25,7 +25,7 @@
     position: absolute;
     width: 100%;
     background-color: map.get(col.$colors, "dark-bg-primary");
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
     text-align: center;
     @include col.head_title(
       $size: map.get(col.$font_size, "h4"),
@@ -39,7 +39,7 @@
     }
 
     ul {
-      @include col.flex_direction(map.get(col.$spacing, "lg"), column);
+      @include col.flex_direction(map.get(col.$spacing, "lg"));
     }
   }
 
@@ -48,14 +48,13 @@
 
     @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
       background-color: map.get(col.$colors, "bg-primary");
-      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
       padding: map.get(col.$spacing, "sm") map.get(col.$spacing, "md");
 
-      border: 1px solid white;
+      border: 2px solid white;
       border-radius: map.get(col.$spacing, "lg");
     }
   }

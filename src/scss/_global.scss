@@ -14,7 +14,11 @@ body {
   color: map.get(col.$colors, "primary-text");
   @include col.bread_text;
 
+  
+
   background-image: url(../assets/Android_homepage.jpg);
+  
+
   background-repeat: no-repeat;
   background-position: top;
 
@@ -22,7 +26,8 @@ body {
     background-image: url(../assets/Desktop_homepage.jpg);
   }
   @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
-    background-image: url(../assets/Desktop_homepage.jpg);
+    background-image: url(../assets/Desktop_homepage.jpg) ;
+    
   }
 }
 
@@ -130,23 +135,23 @@ a {
   color: map.get(col.$colors, "primary-text");
   text-decoration-color: rgba(0, 0, 0, 0);
   transition: color 0.35s ease-in-out, text-decoration-color 0.35s ease-in-out;
+  text-decoration-thickness: 2px;
 
   &:hover {
     transition: color 0.35s ease-in-out, text-decoration-color 0.35s ease-in-out;
     text-decoration-color: map.get(col.$colors, "primary-highlight");
-    text-decoration-thickness: 2px;
     color: map.get(col.$colors, "primary-highlight");
   }
 }
 
 button {
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 //Btn styling

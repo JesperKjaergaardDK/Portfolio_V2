@@ -9,6 +9,7 @@ function Skills() {
       <div className="skills__container">
         <div className="skills__code">
           <h6>Development</h6>
+       
           <div className="skills__collection">
             {icons_code.map((icon, index) => (
               <Icon

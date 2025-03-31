@@ -14,7 +14,9 @@ function Header() {
     <header>
       <div className="header">
         <div className="header__mobile">
-          <img className="header__img" src={logo} alt="" />
+          <a href="/">
+            <img className="header__img" src={logo} alt="" />
+          </a>
 
           <button type="button" onClick={handleToggleMenu}>
             <img src={dropdownIsOpen ? open_ham : close_ham} alt="mode" />
@@ -25,6 +27,9 @@ function Header() {
           <div className="header__dropdown">
             <nav>
               <ul>
+                <li>
+                  <a href="/">Home</a>
+                </li>
                 <li>
                   <a href="#about">About</a>
                 </li>
@@ -43,6 +48,9 @@ function Header() {
           <img className="header__img" src={logo} alt="" />
           <nav className="header__nav">
             <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
               <li>
                 <a href="#about">About</a>
               </li>
