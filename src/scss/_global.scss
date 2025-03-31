@@ -16,7 +16,7 @@ body {
 
   
 
-  background-image: url(../assets/Android_homepage.jpg);
+  /* background-image: url(../assets/Android_homepage.jpg);
   
 
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body {
   @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
     background-image: url(../assets/Desktop_homepage.jpg) ;
     
-  }
+  } */
 }
 
 footer {

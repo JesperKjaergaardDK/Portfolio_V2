@@ -37,13 +37,7 @@ function Project_info() {
 
         <div className="project_info__details">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            alias consectetur tenetur hic fuga accusamus sit dolore laborum
-            iusto labore quia veritatis, consequuntur quod odit perspiciatis,
-            incidunt sapiente quis harum! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Expedita alias consectetur tenetur hic
-            fuga accusamus sit dolore laborum iusto labore quia veritatis,
-            consequuntur quod odit perspiciatis, incidunt sapiente quis harum!
+           {project.description}
           </p>
 
           <div className="project_info__tools">
