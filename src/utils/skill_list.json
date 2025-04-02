@@ -1,5 +1,5 @@
 {
-  "list": [
+  "combind_list": [
     {
       "icon_name": "HTML",
       "src": "../src/assets/icons/skills/icons8-html-64.png",
@@ -57,7 +57,7 @@
     }
   ],
 
-  "icons_code": [
+  "skill_code": [
     {
       "icon_name": "HTML",
       "src": "../src/assets/icons/skills/icons8-html-64.png",
@@ -95,7 +95,7 @@
     }
   ],
 
-  "icons_design": [
+  "skill_design": [
     {
       "icon_name": "Figma",
       "src": "../src/assets/icons/skills/icons8-figma-64.png",

@@ -1,5 +1,5 @@
 import Icon from "../../UI/Icon";
-import { icons_code, icons_design } from "../../../utils/icon_list.json";
+import { skill_code, skill_design } from "../../../utils/skill_list.json";
 
 function Skills() {
   return (
@@ -9,9 +9,9 @@ function Skills() {
       <div className="skills__container">
         <div className="skills__code">
           <h6>Development</h6>
-       
+
           <div className="skills__collection">
-            {icons_code.map((icon, index) => (
+            {skill_code.map((icon, index) => (
               <Icon
                 key={index}
                 icon_name={icon.icon_name}
@@ -25,7 +25,7 @@ function Skills() {
         <div className="skills__design">
           <h6>Design</h6>
           <div className="skills__collection">
-            {icons_design.map((icon, index) => (
+            {skill_design.map((icon, index) => (
               <Icon
                 key={index}
                 icon_name={icon.icon_name}

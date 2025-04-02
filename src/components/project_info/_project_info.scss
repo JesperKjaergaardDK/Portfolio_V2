@@ -4,9 +4,12 @@
 .project_info {
   @include col.flex-direction(map.get(col.$spacing, "xxl"));
 
-  &__img {
-    border: 2px solid white;
-    border-radius: map.get(col.$spacing, "md");
+  &__thumbnail {
+    @include col.white_border();
+  }
+
+  &__content {
+    @include col.flex-direction(map.get(col.$spacing, "lg"));
   }
 
   &__header {
@@ -26,7 +29,7 @@
     }
   }
 
-  &__details {
+  &__description {
     @include col.flex-direction(map.get(col.$spacing, "lg"));
 
     @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
@@ -58,35 +61,21 @@
     }
 
     img {
-      background-color: white;
+      @include col.white_border();
       width: 100%;
       grid-column: span 12;
-      border: 2px solid white;
-      border-radius: map.get(col.$spacing, "md");
     }
 
-    .img__1 {
+    .img__single {
       @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
         grid-column: 4/ 10;
       }
     }
 
-    .img__2 {
+    .img__partner {
       @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
         grid-column: span 6;
       }
     }
-
-    /* .img__4 {
-      grid-column: 7/13;
-    }
-
-    .img__5 {
-      grid-column: 4/7;
-    }
-
-    .img__6 {
-      grid-column: 1/4;
-    } */
   }
 }
