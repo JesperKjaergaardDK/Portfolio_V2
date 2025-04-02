@@ -2,7 +2,7 @@
 @use "sass:map";
 
 .project_info {
-  @include col.flex-direction(map.get(col.$spacing, "lg"));
+  @include col.flex-direction(map.get(col.$spacing, "xxl"));
 
   &__img {
     border: 2px solid white;
@@ -32,7 +32,7 @@
     @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      
+
       :nth-child(odd) {
         grid-column: 1/7;
       }
@@ -51,5 +51,42 @@
   &__gallery {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    row-gap: 32px;
+
+    @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+      gap: 32px;
+    }
+
+    img {
+      background-color: white;
+      width: 100%;
+      grid-column: span 12;
+      border: 2px solid white;
+      border-radius: map.get(col.$spacing, "md");
+    }
+
+    .img__1 {
+      @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+        grid-column: 4/ 10;
+      }
+    }
+
+    .img__2 {
+      @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+        grid-column: span 6;
+      }
+    }
+
+    /* .img__4 {
+      grid-column: 7/13;
+    }
+
+    .img__5 {
+      grid-column: 4/7;
+    }
+
+    .img__6 {
+      grid-column: 1/4;
+    } */
   }
 }
