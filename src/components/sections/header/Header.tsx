@@ -2,6 +2,7 @@ import logo from "../../../assets/Logo.svg";
 import open_ham from "../../../assets/Hamburger_open.svg";
 import close_ham from "../../../assets/Hamburger_close.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [dropdownIsOpen, setropdownIsOpen] = useState(false);
@@ -14,9 +15,9 @@ function Header() {
     <header>
       <div className="header">
         <div className="header__mobile">
-          <a href="/">
+          <Link to="/">
             <img className="header__img" src={logo} alt="" />
-          </a>
+          </Link>
 
           <button type="button" onClick={handleToggleMenu}>
             <img src={dropdownIsOpen ? open_ham : close_ham} alt="mode" />
@@ -28,16 +29,16 @@ function Header() {
             <nav>
               <ul>
                 <li>
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="#about">About</a>
+                  <Link to="#about">About</Link>
                 </li>
                 <li>
-                  <a href="#skills">Skills</a>
+                  <Link to="#skills">Skills</Link>
                 </li>
                 <li>
-                  <a href="#projects">Projets</a>
+                  <Link to="#projects">Projets</Link>
                 </li>
               </ul>
             </nav>
@@ -49,16 +50,16 @@ function Header() {
           <nav className="header__nav">
             <ul>
               <li>
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="#about">About</a>
+                <Link to="#about">About</Link>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <Link to="#skills">Skills</Link>
               </li>
               <li>
-                <a href="#projects">Projets</a>
+                <Link to="#projects">Projets</Link>
               </li>
             </ul>
           </nav>

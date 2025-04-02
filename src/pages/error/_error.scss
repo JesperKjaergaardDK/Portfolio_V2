@@ -1,0 +1,24 @@
+@use "../../scss/collection" as col;
+@use "sass:map";
+
+.error {
+  height: 100vh;
+  padding-inline: map.get(col.$spacing, "md");
+
+  @include col.flex_direction(map.get(col.$spacing, "lg"));
+
+  align-items: center;
+  justify-content: center;
+
+  &__info {
+    @include col.flex_direction(map.get(col.$spacing, "xs"));
+    align-items: center;
+
+    &-highlight {
+      color: map-get(col.$colors, "primary-highlight");
+      border-radius: map.get(col.$spacing, "md");
+      padding: map.get(col.$spacing, "md");
+      box-shadow: 0 0 16px map.get(col.$colors, "primary-highlight");
+    }
+  }
+}

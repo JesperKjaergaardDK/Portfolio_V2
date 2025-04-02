@@ -7,6 +7,7 @@ import linkedin from "../../../assets/icons/footer/icons8-linkedin-32.png";
 import mail from "../../../assets/icons/footer/icons8-mail-32.png";
 import phone from "../../../assets/icons/footer/icons8-phone-32.png";
 import address from "../../../assets/icons/footer/icons8-location-32.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -15,28 +16,28 @@ function Footer() {
         <div className="footer__logo-container">
           <img className="footer__logo" src={logo} alt="logo" />
           <div className="footer__socials">
-            <a href="https://www.linkedin.com/in/jesper-kj%C3%A6rgaard-b61251235/">
+            <Link to="https://www.linkedin.com/in/jesper-kj%C3%A6rgaard-b61251235/">
               <img src={linkedin} alt="linkedin" />
-            </a>
-            <a href="https://github.com/JesperKjaergaardDK">
+            </Link>
+            <Link to="https://github.com/JesperKjaergaardDK">
               <img src={github} alt="github" />
-            </a>
+            </Link>
           </div>
         </div>
         <nav className="footer__nav">
           <h6>Navigation</h6>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link to="#about">About</Link>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <Link to="#skills">Skills</Link>
             </li>
             <li>
-              <a href="#projects">Projets</a>
+              <Link to="#projects">Projets</Link>
             </li>
           </ul>
         </nav>

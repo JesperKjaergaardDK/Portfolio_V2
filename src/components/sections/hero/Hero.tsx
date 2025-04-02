@@ -1,5 +1,5 @@
 import Button from "../../UI/Button";
-import headImg from "../../../assets/Hand_on_chin_hero_img.png";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -22,9 +22,9 @@ function Hero() {
           shifting my focus to Frontend Development to craft seamless and
           engaging user experiences
         </p>
-        <a href="#projects">
+        <Link to="#projects">
           <Button is_highlight>See My Creations</Button>
-        </a>
+        </Link>
       </div>
 
      {/*  <img

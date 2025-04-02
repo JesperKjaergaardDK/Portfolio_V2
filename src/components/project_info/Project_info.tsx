@@ -4,8 +4,15 @@ import Button from "../UI/Button";
 import { projects } from "../../utils/project_list.json";
 import { combind_list } from "../../utils/skill_list.json";
 import Icon from "../UI/Icon";
+import { Link, useParams } from "react-router-dom";
+import Error from "../../pages/error/Error";
+import { useEffect } from "react";
 
 function Project_info() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   type skill = {
     icon_name: string;
     src: string;
@@ -17,9 +24,16 @@ function Project_info() {
   };
 
   const thumbnail_path = "/src/assets/projects/";
+  const project_id = useParams<{ project_id: string }>();
 
-  const project_id = parseInt(location.pathname.split("/")[2]);
-  const project = projects[project_id];
+  //const project: number | null = test.project_id ? projects[parseInt(test.project_id)] : null;
+  const project: (typeof projects)[number] | null = project_id.project_id
+    ? projects[parseInt(project_id.project_id)]
+    : null;
+
+  if (!project) {
+    return <Error />;
+  }
 
   //Creates skill section
   //Go though all of the projects skills
@@ -91,9 +105,9 @@ function Project_info() {
         <div className="project_info__content">
           <div className="project_info__header">
             <h1>{project.title}</h1>
-            <a href={project.website}>
+            <Link to={project.website}>
               <Button is_highlight>View website</Button>
-            </a>
+            </Link>
           </div>
 
           <div className="project_info__description">

@@ -5,8 +5,7 @@ import "./scss/index.scss";
 
 import App from "./App.tsx";
 import Project_info from "./components/project_info/Project_info.tsx";
-import Error from "./components/error/Error.tsx";
-
+import Error from "./pages/error/Error.tsx";
 
 const router = createBrowserRouter([
   {
@@ -15,9 +14,8 @@ const router = createBrowserRouter([
     errorElement: <Error />,
   },
   {
-    path: "/project/:id",
+    path: "/project/:project_id",
     element: <Project_info />,
-    errorElement: <Error />,
   },
 ]);
 

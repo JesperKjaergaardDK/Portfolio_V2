@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "./Button";
 
 
@@ -20,13 +21,13 @@ function Project(prop: props) {
         <p>{prop.short_description}</p>
 
         <div className="project__cta">
-          <a href={prop.website}>
+          <Link to={prop.website}>
             <Button>Visit site</Button>
-          </a>
+          </Link>
 
-          <a href={`project/${prop.id}`}>
+          <Link to={`project/${prop.id}`}>
             <Button>Project details</Button>
-          </a>
+          </Link>
         </div>
       </div>
 
