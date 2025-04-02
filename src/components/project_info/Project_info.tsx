@@ -97,7 +97,7 @@ function Project_info() {
           </div>
 
           <div className="project_info__description">
-            <p>{project.description}</p>
+            <p>{project.full_description}</p>
             <div className="project_info__tools">{skills}</div>
           </div>
         </div>

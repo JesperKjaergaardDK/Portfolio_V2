@@ -3,7 +3,8 @@
     {
       "id": 0,
       "title": "PortfolioV2",
-      "description": "My first portfolio was created to showcase my projects and skills as I started my journey in frontend development. It was a great learning experience in design and presentation. Now, with my updated Portfolio V2, I’ve improved the design, incorporated new skills, and refined my approach to better reflect my growth and capabilities.",
+      "short_description": "My first portfolio was created to showcase my projects and skills as I started my journey in frontend development. It was a great learning experience in design and presentation. Now, with my updated Portfolio V2, I’ve improved the design, incorporated new skills, and refined my approach to better reflect my growth and capabilities.",
+      "full_description": "My first portfolio was created to showcase my projects and skills as I started my journey in frontend development. It was a great learning experience in design and presentation. Now, with my updated Portfolio V2, I’ve improved the design, incorporated new skills, and refined my approach to better reflect my growth and capabilities.",
       "img": "loopstudio/Loopstudio.png",
       "alt": "Project image of Vine&Vintage",
       "website": "https://vinevintages.jesperkjaergaard.dk/",
@@ -13,7 +14,8 @@
     {
       "id": 1,
       "title": "Vine&Vintages",
-      "description": "Vine & Vintages is an engaging website designed for a wine factory that offers immersive tours and hosts a variety of events. The platform is crafted with a user-friendly interface to showcase the rich history and craftsmanship behind the winery while inviting visitors to experience it firsthand.",
+      "short_description": "Vine & Vintages is an engaging website designed for a wine factory that offers immersive tours and hosts a variety of events. The platform is crafted with a user-friendly interface to showcase the rich history and craftsmanship behind the winery while inviting visitors to experience it firsthand.",
+      "full_description": "Vine & Vintages is an engaging website designed for a wine factory that offers immersive tours and hosts a variety of events. The platform is crafted with a user-friendly interface to showcase the rich history and craftsmanship behind the winery while inviting visitors to experience it firsthand.",
       "img": "vine&vintage/Vine&Vintage.png",
       "alt": "Project image of Vine&Vintage",
       "website": "https://vinevintages.jesperkjaergaard.dk/",
@@ -23,7 +25,8 @@
     {
       "id": 2,
       "title": "PortfolioV1",
-      "description": "My first portfolio was created as a way to showcase my projects and skills, serving as an introduction to my journey in frontend development. It was a stepping stone in learning how to present my work effectively and refine my approach to design and coding.",
+      "short_description": "My first portfolio was created as a way to showcase my projects and skills, serving as an introduction to my journey in frontend development. It was a stepping stone in learning how to present my work effectively and refine my approach to design and coding.",
+      "full_description": "My first portfolio was created as a way to showcase my projects and skills, serving as an introduction to my journey in frontend development. It was a stepping stone in learning how to present my work effectively and refine my approach to design and coding.",
       "img": "portfolio_V1/Portfolio_V1.png",
       "alt": "Project image of Vine&Vintage",
       "website": "https://vinevintages.jesperkjaergaard.dk/",
@@ -33,7 +36,8 @@
     {
       "id": 3,
       "title": "Loopstudio",
-      "description": "This project is part of the Frontend Mentor initiative, where I was challenged to transform a given design into a fully functional website. The task at hand was to develop the homepage for LoopStudio, utilizing images and Figma designs as the blueprint.",
+      "short_description": "This project is part of the Frontend Mentor initiative, where I was challenged to transform a given design into a fully functional website. The task at hand was to develop the homepage for LoopStudio, utilizing images and Figma designs as the blueprint.",
+      "full_description": "This project is part of the Frontend Mentor initiative, where I was challenged to transform a given design into a fully functional website. The task at hand was to develop the homepage for LoopStudio, utilizing images and Figma designs as the blueprint.",
       "img": "loopstudio/Loopstudio.png",
       "alt": "Project image of Loopstudio",
       "website": "https://loopstudios.jesperkjaergaard.dk/",

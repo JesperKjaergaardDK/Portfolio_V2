@@ -4,7 +4,7 @@ import Button from "./Button";
 interface props {
   id: number;
   title: string;
-  description: string;
+  short_description: string;
   img: string;
   alt: string;
   website: string;
@@ -17,7 +17,7 @@ function Project(prop: props) {
     <div className="project">
       <div className="project__info">
         <h3 className="text_center">{prop.title}</h3>
-        <p>{prop.description}</p>
+        <p>{prop.short_description}</p>
 
         <div className="project__cta">
           <a href={prop.website}>

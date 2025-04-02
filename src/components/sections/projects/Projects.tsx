@@ -11,7 +11,7 @@ function Projects() {
           key={index}
           id={projects.id}
           title={projects.title}
-          description={projects.description}
+          short_description={projects.full_description}
           img={projects.img}
           alt={projects.alt}
           website={projects.website}
