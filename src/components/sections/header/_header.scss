@@ -27,6 +27,7 @@
     background-color: map.get(col.$colors, "dark-bg-primary");
     border-bottom: 2px solid white;
     text-align: center;
+    
     @include col.head_title(
       $size: map.get(col.$font_size, "h4"),
       $weight: map.get(col.$weight, "600")

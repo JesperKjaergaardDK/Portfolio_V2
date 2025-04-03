@@ -1,9 +1,9 @@
-import Header from "../sections/header/Header";
-import Footer from "../sections/footer/Footer";
-import Button from "../UI/Button";
+import Header from "../../components/sections/header/Header";
+import Footer from "../../components/sections/footer/Footer";
+import Button from "../../components/UI/Button";
 import { projects } from "../../utils/project_list.json";
 import { combind_list } from "../../utils/skill_list.json";
-import Icon from "../UI/Icon";
+import Icon from "../../components/UI/Icon";
 import { Link, useParams } from "react-router-dom";
 import Error from "../../pages/error/Error";
 import { useEffect } from "react";
@@ -111,7 +111,13 @@ function Project_info() {
           </div>
 
           <div className="project_info__description">
-            <p>{project.full_description}</p>
+            <div className="project_info__text">
+              {Array.isArray(project.full_description) &&
+                project.full_description.map((line: string, index: number) => (
+                  <p key={index}>{line}</p>
+                ))}
+            </div>
+
             <div className="project_info__tools">{skills}</div>
           </div>
         </div>

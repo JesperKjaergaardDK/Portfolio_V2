@@ -46,9 +46,16 @@
     }
   }
 
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: map.get(col.$spacing, "md" )
+  }
+
   &__tools {
     @include col.flex-direction(map.get(col.$spacing, "lg"), row);
     flex-wrap: wrap;
+    height: fit-content;
   }
 
   &__gallery {

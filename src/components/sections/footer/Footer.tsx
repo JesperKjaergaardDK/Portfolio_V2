@@ -8,6 +8,7 @@ import mail from "../../../assets/icons/footer/icons8-mail-32.png";
 import phone from "../../../assets/icons/footer/icons8-phone-32.png";
 import address from "../../../assets/icons/footer/icons8-location-32.png";
 import { Link } from "react-router-dom";
+import Nav_list from "../../UI/Nav_list";
 
 function Footer() {
   return (
@@ -26,20 +27,7 @@ function Footer() {
         </div>
         <nav className="footer__nav">
           <h6>Navigation</h6>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="#about">About</Link>
-            </li>
-            <li>
-              <Link to="#skills">Skills</Link>
-            </li>
-            <li>
-              <Link to="#projects">Projets</Link>
-            </li>
-          </ul>
+          <Nav_list />
         </nav>
         <div className="footer__contact">
           <h6>Contact</h6>

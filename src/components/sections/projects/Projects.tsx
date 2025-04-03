@@ -6,17 +6,19 @@ function Projects() {
     <section id="projects" className="projects">
       <h2 className="text_center">My Work in Action</h2>
 
-      {projects.map((projects, index) => (
-        <Project
-          key={index}
-          id={projects.id}
-          title={projects.title}
-          short_description={projects.full_description}
-          img={projects.img}
-          alt={projects.alt}
-          website={projects.website}
-        />
-      ))}
+      <div className="projects__list">
+        {projects.map((projects, index) => (
+          <Project
+            key={index}
+            id={projects.id}
+            title={projects.title}
+            short_description={projects.short_description}
+            img={projects.img}
+            alt={projects.alt}
+            website={projects.website}
+          />
+        ))}
+      </div>
     </section>
   );
 }

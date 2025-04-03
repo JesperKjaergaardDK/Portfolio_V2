@@ -15,7 +15,7 @@
     align-items: center;
 
     &-highlight {
-      color: map-get(col.$colors, "primary-highlight");
+      color: map.get(col.$colors, "primary-highlight");
       border-radius: map.get(col.$spacing, "md");
       padding: map.get(col.$spacing, "md");
       box-shadow: 0 0 16px map.get(col.$colors, "primary-highlight");

@@ -2,7 +2,11 @@
 @use "sass:map";
 
 .projects {
-  @include col.flex_direction(map.get(col.$spacing, "xxl"));
+  @include col.flex_direction(map.get(col.$spacing, "lg"));
+
+  &__list {
+    @include col.flex_direction(map.get(col.$spacing, "xxl"));
+  }
 }
 
 .project {
@@ -28,16 +32,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 34px;
+    gap: map.get(col.$spacing, "lg");
 
     @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
       justify-content: space-between;
     }
   }
 
-  &__img {
-    border: 2px solid map.get(col.$colors, "primary-text");
-    border-radius: 32px;
+  &__thumbnail {
+    @include col.white_border(map.get(col.$spacing, "lg"));
 
     @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
       width: 100%;
@@ -45,7 +48,7 @@
     }
   }
 
-  &:nth-child(even) &__img {
+  &:nth-child(even) &__thumbnail {
     @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
       grid-column: 1/9;
       grid-row: 1;

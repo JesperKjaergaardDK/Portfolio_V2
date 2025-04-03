@@ -17,16 +17,8 @@
     padding-bottom: map.get(col.$spacing, "xl");
 
     @include col.flex_direction(map.get(col.$spacing, "lg"));
-
     align-items: center;
     justify-content: center;
-
-    /* h1 {
-      text-align: center;
-      @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
-        text-align: start;
-      }
-    } */
 
     @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
       grid-column: 2/12;
@@ -34,7 +26,7 @@
 
     &-highlight {
       color: map.get(col.$colors, "primary-highlight");
-      
+
       span {
         @for $i from 1 through 6 {
           &:nth-child(#{$i}) {
@@ -45,23 +37,5 @@
         }
       }
     }
-  }
-
- /*  &__img {
-    position: relative;
-    left: -100px;
-
-    @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
-      left: 0;
-    }
-
-    @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
-      grid-column: 7/13;
-    }
-  } */
-
-  @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
   }
 }

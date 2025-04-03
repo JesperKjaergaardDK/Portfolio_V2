@@ -46,7 +46,7 @@
   );
 }
 
-//Img 
+//Borders 
 @mixin white_border($radius: map.get(var.$spacing, "md") ) {
   border: 2px solid map.get(var.$colors, primary-text );
   border-radius: $radius;

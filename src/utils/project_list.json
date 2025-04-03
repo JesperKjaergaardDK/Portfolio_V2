@@ -4,7 +4,11 @@
       "id": 0,
       "title": "PortfolioV2",
       "short_description": "My first portfolio was created to showcase my projects and skills as I started my journey in frontend development. It was a great learning experience in design and presentation. Now, with my updated Portfolio V2, I’ve improved the design, incorporated new skills, and refined my approach to better reflect my growth and capabilities.",
-      "full_description": "My first portfolio was created to showcase my projects and skills as I started my journey in frontend development. It was a great learning experience in design and presentation. Now, with my updated Portfolio V2, I’ve improved the design, incorporated new skills, and refined my approach to better reflect my growth and capabilities.",
+      "full_description": [
+        "My first portfolio was created to showcase my projects and skills as I began my journey in frontend development. It was a valuable learning experience in both design and presentation. Now, with my updated portfolio V2, I’ve improved the design, incorporated new skills, and refined my approach to better reflect my growth and capabilities.",
+        "With my new portfolio, I aimed to create a cleaner, more polished design with subtle effects and an improved user interface. This project also serves as a way to measure my progress, allowing me to see how much I’ve improved from my earlier work. I continue to refine both my design choices and code optimization to ensure a better experience.",
+        "Throughout the project, I worked on improving my planning process by creating more precise Figma designs, including wireframes, design choices, and structured ideas. However, I still encountered challenges, especially in determining how to structure data effectively and ensuring that my designs translated well into code. Some design elements worked better than expected, while others didn’t function as intended due to technical limitations or my own constraints. These challenges helped me learn and refine my problem-solving approach, making this portfolio an ongoing learning experience."
+      ],
       "img": "loopstudio/Loopstudio.png",
       "alt": "Project image of Vine&Vintage",
       "website": "https://vinevintages.jesperkjaergaard.dk/",
@@ -31,7 +35,15 @@
       "alt": "Project image of Vine&Vintage",
       "website": "https://vinevintages.jesperkjaergaard.dk/",
 
-      "skills": ["HTML", "CSS", "SASS", "React", "TypeScript", "Figma", "Bootstrap" ]
+      "skills": [
+        "HTML",
+        "CSS",
+        "SASS",
+        "React",
+        "TypeScript",
+        "Figma",
+        "Bootstrap"
+      ]
     },
     {
       "id": 3,

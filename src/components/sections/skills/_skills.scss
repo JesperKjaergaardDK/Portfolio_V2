@@ -24,13 +24,13 @@
 
   &__code {
     @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
-      grid-column: 1/7;
+      grid-column: 1/8;
     }
   }
 
   &__design {
     @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
-      grid-column: 7/13;
+      grid-column: 8/13;
     }
   }
 

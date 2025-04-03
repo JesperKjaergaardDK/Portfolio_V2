@@ -31,7 +31,7 @@ function Project(prop: props) {
         </div>
       </div>
 
-      <img className="project__img" src={`${img_path}${prop.img}`} alt="" />
+      <img className="project__thumbnail" src={`${img_path}${prop.img}`} alt="" />
     </div>
   );
 }

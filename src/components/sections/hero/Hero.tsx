@@ -17,7 +17,7 @@ function Hero() {
           </span>{" "}
           Kjærgaard
         </h1>
-        <p className="p_large">
+        <p className="p_large text_center">
           I'm a certified Data Technician specializing in programming, now
           shifting my focus to Frontend Development to craft seamless and
           engaging user experiences
@@ -26,12 +26,6 @@ function Hero() {
           <Button is_highlight>See My Creations</Button>
         </Link>
       </div>
-
-     {/*  <img
-        className="hero__img"
-        src={headImg}
-        alt="Creater of the webstie with a closed hand on his chin looking a bit to the side"
-      /> */}
     </section>
   );
 }
