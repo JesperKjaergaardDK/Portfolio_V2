@@ -1,5 +1,3 @@
-import Header from "../../components/sections/header/Header";
-import Footer from "../../components/sections/footer/Footer";
 import Button from "../../components/UI/Button";
 import { projects } from "../../utils/project_list.json";
 import { combind_list } from "../../utils/skill_list.json";
@@ -17,10 +15,6 @@ function Project_info() {
     icon_name: string;
     src: string;
     alt: string;
-  };
-
-  type imageModule = {
-    default: string;
   };
 
   const thumbnail_path = "/src/assets/projects/";
@@ -62,39 +56,38 @@ function Project_info() {
       />
     ) : null;
   });
+  
+  
 
-  //Creates gallery section
-  //Get images out as an object
-  const gallery_object = import.meta.glob(
-    "/src/assets/projects/loopstudio/gallery/desktop/*.{png,jpg,jpeg,svg}",
-    {
-      eager: true,
-    }
+  const desktop_gallery = project.gal_desktop?.map(
+    (file_name: string, index: number) => (
+      <img
+        className="img__desktop"
+        key={index}
+        src={`/src/assets/projects/${project.title}/gallery/desktop/${file_name}`}
+        alt={`${project.title} gallery image`}
+      />
+    )
   );
-
-  //Convert gallery object to an array
-  const gallery_list: imageModule[] = Object.values(
-    gallery_object
-  ) as imageModule[];
-
-  const gallery_lenght: number = gallery_list.length;
-  let count_gallery: number = 0;
-
-  //Makes the img for gallery
-  const gallery_array = gallery_list.map((img, index) => (
-    <img
-      className={`img__${
-        (count_gallery += 1) + 1 <= gallery_lenght ? "partner" : "single"
-      }`}
-      key={index}
-      src={img.default}
-      alt={`${project.title} gallery image`}
-    />
-  ));
+  
+  const mobile_gallery = project.gal_mobile?.map(
+    (file_name: string, index: number) => (
+      <img
+        className="img__mobile"
+        key={index}
+        src={`/src/assets/projects/${project.title}/gallery/mobile/${file_name}`}
+        alt={`${project.title} gallery image`}
+      />
+    )
+  );
 
   return (
     <>
-      <Header />
+      <div className="go_back">
+        <Link to={".."}>
+          <Button>{"<- Go back"}</Button>
+        </Link>
+      </div>
       <section className="project_info">
         <img
           className="project_info__thumbnail"
@@ -122,9 +115,11 @@ function Project_info() {
           </div>
         </div>
 
-        <div className="project_info__gallery">{gallery_array}</div>
+        <div className="project_info__gallery">
+          {desktop_gallery}
+          {mobile_gallery}
+        </div>
       </section>
-      <Footer />
     </>
   );
 }

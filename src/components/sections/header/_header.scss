@@ -2,7 +2,6 @@
 @use "sass:map";
 
 .header {
-  background-color: map.get(col.$colors, "bg-primary");
   position: relative;
   z-index: 1;
 
@@ -27,7 +26,7 @@
     background-color: map.get(col.$colors, "dark-bg-primary");
     border-bottom: 2px solid white;
     text-align: center;
-    
+
     @include col.head_title(
       $size: map.get(col.$font_size, "h4"),
       $weight: map.get(col.$weight, "600")
@@ -48,15 +47,18 @@
     display: none;
 
     @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
-      background-color: map.get(col.$colors, "bg-primary");
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      padding: map.get(col.$spacing, "sm") map.get(col.$spacing, "md");
+      padding: map.get(col.$spacing, "lg");
+      padding-inline: 0;
+      border-radius: map.get(col.$spacing, "sm");
 
-      border: 2px solid white;
-      border-radius: map.get(col.$spacing, "lg");
+      a {
+        display: flex;
+        align-items: center;
+      }
     }
   }
 

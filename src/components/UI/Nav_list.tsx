@@ -1,19 +1,14 @@
-import { Link } from "react-router-dom";
-
 function Nav_list() {
   return (
     <ul>
       <li>
-        <Link to="/">Home</Link>
+        <a href="#about">About</a>
       </li>
       <li>
-        <Link to="#about">About</Link>
+        <a href="#skills">Skills</a>
       </li>
       <li>
-        <Link to="#skills">Skills</Link>
-      </li>
-      <li>
-        <Link to="#projects">Projets</Link>
+        <a href="#projects">Projets</a>
       </li>
     </ul>
   );

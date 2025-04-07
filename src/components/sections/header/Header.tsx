@@ -2,7 +2,6 @@ import logo from "../../../assets/Logo.svg";
 import open_ham from "../../../assets/Hamburger_open.svg";
 import close_ham from "../../../assets/Hamburger_close.svg";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Nav_list from "../../UI/Nav_list";
 
 function Header() {
@@ -16,9 +15,9 @@ function Header() {
     <header>
       <div className="header">
         <div className="header__mobile">
-          <Link to="/">
+          <a href="#">
             <img src={logo} alt="Jesper K logo" />
-          </Link>
+          </a>
 
           <button type="button" onClick={handleToggleMenu}>
             <img src={dropdownIsOpen ? open_ham : close_ham} alt="mode" />
@@ -32,7 +31,9 @@ function Header() {
         )}
 
         <div className="header__desktop">
-          <img src={logo} alt="Jesper K logo" />
+          <a href="#">
+            <img src={logo} alt="Jesper K logo" />
+          </a>{" "}
           <nav className="header__nav">
             <Nav_list />
           </nav>

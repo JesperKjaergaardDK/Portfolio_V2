@@ -13,27 +13,47 @@
       "alt": "Project image of Vine&Vintage",
       "website": "https://vinevintages.jesperkjaergaard.dk/",
 
+      "gal_desktop": [],
+      "gal_mobile": [],
+
       "skills": ["HTML", "SASS", "React", "TypeScript", "Figma", "Photoshop"]
     },
     {
       "id": 1,
       "title": "Vine&Vintages",
       "short_description": "Vine & Vintages is an engaging website designed for a wine factory that offers immersive tours and hosts a variety of events. The platform is crafted with a user-friendly interface to showcase the rich history and craftsmanship behind the winery while inviting visitors to experience it firsthand.",
-      "full_description": "Vine & Vintages is an engaging website designed for a wine factory that offers immersive tours and hosts a variety of events. The platform is crafted with a user-friendly interface to showcase the rich history and craftsmanship behind the winery while inviting visitors to experience it firsthand.",
+      "full_description": [
+        "Vine & Vintages is an engaging website designed for a wine factory that offers immersive tours and hosts a variety of events. The platform is crafted with a user-friendly interface to showcase the rich history and craftsmanship behind the winery while inviting visitors to experience it firsthand."
+      ],
       "img": "vine&vintage/Vine&Vintage.png",
       "alt": "Project image of Vine&Vintage",
       "website": "https://vinevintages.jesperkjaergaard.dk/",
+
+      "gal_desktop": [],
+      "gal_mobile": [],
 
       "skills": ["HTML", "SASS", "React", "TypeScript", "Figma", "Bootstrap"]
     },
     {
       "id": 2,
-      "title": "PortfolioV1",
+      "title": "Portfolio_V1",
       "short_description": "My first portfolio was created as a way to showcase my projects and skills, serving as an introduction to my journey in frontend development. It was a stepping stone in learning how to present my work effectively and refine my approach to design and coding.",
-      "full_description": "My first portfolio was created as a way to showcase my projects and skills, serving as an introduction to my journey in frontend development. It was a stepping stone in learning how to present my work effectively and refine my approach to design and coding.",
+      "full_description": [
+        "My first portfolio was created as a way to showcase my projects and skills, serving as an introduction to my journey in frontend development. It was a stepping stone in learning how to present my work effectively and refine my approach to design and coding."
+      ],
       "img": "portfolio_V1/Portfolio_V1.png",
       "alt": "Project image of Vine&Vintage",
       "website": "https://vinevintages.jesperkjaergaard.dk/",
+
+      "gal_desktop": ["hero.png", "skills.png", "portfolio.png", "footer.png"],
+
+      "gal_mobile": [
+        "dropdown.png",
+        "hero.png",
+        "skills.png",
+        "portfolio.png",
+        "footer.png"
+      ],
 
       "skills": [
         "HTML",
@@ -49,10 +69,15 @@
       "id": 3,
       "title": "Loopstudio",
       "short_description": "This project is part of the Frontend Mentor initiative, where I was challenged to transform a given design into a fully functional website. The task at hand was to develop the homepage for LoopStudio, utilizing images and Figma designs as the blueprint.",
-      "full_description": "This project is part of the Frontend Mentor initiative, where I was challenged to transform a given design into a fully functional website. The task at hand was to develop the homepage for LoopStudio, utilizing images and Figma designs as the blueprint.",
+      "full_description": [
+        "This project is part of the Frontend Mentor initiative, where I was challenged to transform a given design into a fully functional website. The task at hand was to develop the homepage for LoopStudio, utilizing images and Figma designs as the blueprint."
+      ],
       "img": "loopstudio/Loopstudio.png",
       "alt": "Project image of Loopstudio",
       "website": "https://loopstudios.jesperkjaergaard.dk/",
+
+      "gal_desktop": [],
+      "gal_mobile": [],
 
       "skills": ["HTML", "CSS", "Bootstrap"]
     }

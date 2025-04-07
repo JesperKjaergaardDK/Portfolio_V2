@@ -1,6 +1,26 @@
 @use "../../scss/collection" as col;
 @use "sass:map";
 
+.go_back {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+    margin-inline: auto;
+    width: min(100%, 1120px);
+  }
+
+  button {
+    width: 100%;
+    border-radius: 0;
+
+    @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+      border-radius: 0 0 8px 8px;
+    }
+  }
+}
+
 .project_info {
   @include col.flex-direction(map.get(col.$spacing, "xxl"));
 
@@ -49,7 +69,7 @@
   &__text {
     display: flex;
     flex-direction: column;
-    gap: map.get(col.$spacing, "md" )
+    gap: map.get(col.$spacing, "md");
   }
 
   &__tools {
@@ -61,27 +81,29 @@
   &__gallery {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    row-gap: 32px;
-
+    gap: map.get(col.$spacing, "md" );
+    
     @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
-      gap: 32px;
+      gap: map.get(col.$spacing, "lg" );
     }
 
     img {
       @include col.white_border();
+      box-sizing: border-box;
       width: 100%;
       grid-column: span 12;
     }
 
-    .img__single {
-      @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
-        grid-column: 4/ 10;
-      }
-    }
-
-    .img__partner {
+    .img__desktop {
       @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
         grid-column: span 6;
+      }
+    }
+    
+    .img__mobile {
+      grid-column: span 6;
+      @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
+        grid-column: span 3;
       }
     }
   }
