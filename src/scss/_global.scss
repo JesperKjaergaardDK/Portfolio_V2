@@ -14,41 +14,17 @@ body {
   color: map.get(col.$colors, "primary-text");
   @include col.bread_text;
 
-  /*   background: rgb(50, 39, 92);
+  background: rgb(163, 109, 224);
   background: linear-gradient(
-    180deg,
-    rgba(50, 39, 92, 1) 0%,
-    rgba(31, 25, 56, 1) 15%,
-    rgba(25, 21, 44, 1) 30%,
-    rgba(24, 20, 42, 1) 55%,
-    rgba(12, 11, 20, 1) 100%
-  ); */
-
-  /*  background: rgb(31, 25, 56);
-  background: linear-gradient(
-    180deg,
-    rgba(31, 25, 56, 1) 0%,
-    rgba(50, 39, 92, 1) 10%,
-    rgba(31, 25, 56, 1) 20%,
-    rgba(25, 21, 44, 1) 30%,
-    rgba(24, 20, 42, 1) 55%,
-    rgba(12, 11, 20, 1) 100%
-  ); */
-
- background: rgb(86,35,143);
-background: linear-gradient(140deg, rgba(86,35,143,1) 0%, rgba(36,6,70,1) 15%, rgba(29,11,52,1) 35%, rgba(27,12,47,1) 55%, rgba(23,15,37,1) 75%, rgba(12,11,20,1) 90%); 
-
-
-
-
-
-
-
-
-
-
-
-
+    140deg,
+    rgba(163, 109, 224, 1) 0%,
+    rgba(67, 25, 115, 1) 5%,
+    rgba(29, 5, 55, 1) 15%,
+    rgba(22, 9, 40, 1) 25%,
+    rgba(20, 9, 34, 1) 40%,
+    rgba(22, 15, 34, 1) 60%,
+    rgba(12, 11, 20, 1) 90%
+  );
 }
 
 footer {
@@ -61,7 +37,6 @@ header {
   }
 
   @media (min-width: (map.get(col.$device_size, "tablet") + 100px)) {
-    //padding-top: map.get(col.$spacing, "xl");
     padding-inline: map.get(col.$spacing, "md");
     margin-inline: auto;
     max-width: map.get(col.$device_size, "tablet");
@@ -192,5 +167,18 @@ button {
       box-shadow 0.35s ease-in-out;
     text-decoration-color: map.get(col.$colors, "primary-text");
     box-shadow: 0 0 16px map.get(col.$colors, "primary-highlight");
+  }
+}
+
+.return_to_top {
+  display: none;
+
+  @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
+    display: block;
+
+    cursor: pointer;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
   }
 }

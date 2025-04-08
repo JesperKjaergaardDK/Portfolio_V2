@@ -1,4 +1,4 @@
-import aboutImg from "../../../assets/About_images_portfolios.png";
+import aboutImg from "../../../assets/about_self_portrait.png";
 
 function About() {
   return (
@@ -6,7 +6,7 @@ function About() {
       <h2 className="text_center">Who am i</h2>
 
       <div className="about__content">
-        <img className="about__img" src={aboutImg} alt="" />
+        <img className="about__img" src={aboutImg} alt="self portrait of the developer Jesper Kjærgaard" />
 
         <div className="about__text">
           <p>

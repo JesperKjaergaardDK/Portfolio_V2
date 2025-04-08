@@ -14,7 +14,7 @@
 .hero {
   @media (min-width: (map.get(col.$device_size, "desktop") + 100px)) {
     h1 {
-      font-size: map-get(col.$font_size, h1_desktop);
+      font-size: map.get(col.$font_size, h1_desktop);
     }
   }
 

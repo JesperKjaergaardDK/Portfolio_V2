@@ -2,19 +2,34 @@
   "projects": [
     {
       "id": 0,
-      "title": "PortfolioV2",
+      "title": "Portfolio V2",
       "short_description": "My first portfolio was created to showcase my projects and skills as I started my journey in frontend development. It was a great learning experience in design and presentation. Now, with my updated Portfolio V2, I’ve improved the design, incorporated new skills, and refined my approach to better reflect my growth and capabilities.",
       "full_description": [
         "My first portfolio was created to showcase my projects and skills as I began my journey in frontend development. It was a valuable learning experience in both design and presentation. Now, with my updated portfolio V2, I’ve improved the design, incorporated new skills, and refined my approach to better reflect my growth and capabilities.",
         "With my new portfolio, I aimed to create a cleaner, more polished design with subtle effects and an improved user interface. This project also serves as a way to measure my progress, allowing me to see how much I’ve improved from my earlier work. I continue to refine both my design choices and code optimization to ensure a better experience.",
         "Throughout the project, I worked on improving my planning process by creating more precise Figma designs, including wireframes, design choices, and structured ideas. However, I still encountered challenges, especially in determining how to structure data effectively and ensuring that my designs translated well into code. Some design elements worked better than expected, while others didn’t function as intended due to technical limitations or my own constraints. These challenges helped me learn and refine my problem-solving approach, making this portfolio an ongoing learning experience."
       ],
-      "img": "loopstudio/Loopstudio.png",
+      "img": "portfolio_version2/portfolio_v2.png",
       "alt": "Project image of Vine&Vintage",
       "website": "https://vinevintages.jesperkjaergaard.dk/",
 
-      "gal_desktop": [],
-      "gal_mobile": [],
+      "img_folder": "portfolio_version2",
+      "gal_desktop": [
+        "hero.png",
+        "about.png",
+        "projects.png",
+        "project_hero.png",
+        "project_gallery.png"
+      ],
+      "gal_mobile": [
+        "hero.png",
+        "dropdown.png",
+        "about.png",
+        "projects.png",
+        "project_hero.png",
+        "project_gallery.png",
+        "footer.png"
+      ],
 
       "skills": ["HTML", "SASS", "React", "TypeScript", "Figma", "Photoshop"]
     },
@@ -29,21 +44,39 @@
       "alt": "Project image of Vine&Vintage",
       "website": "https://vinevintages.jesperkjaergaard.dk/",
 
-      "gal_desktop": [],
-      "gal_mobile": [],
+      "img_folder": "vine&vintage",
+      "gal_desktop": [
+        "hero.png",
+        "faq.png",
+        "sales.png",
+        "testimonials.png",
+        "footer.png"
+      ],
+      "gal_mobile": [
+        "hero.png",
+        "dropdown.png",
+        "about.png",
+        "sales.png",
+        "news.png",
+        "testimonials.png",
+        "footer_1.png",
+        "footer_2.png"
+      ],
 
       "skills": ["HTML", "SASS", "React", "TypeScript", "Figma", "Bootstrap"]
     },
     {
       "id": 2,
-      "title": "Portfolio_V1",
+      "title": "Portfolio V1",
       "short_description": "My first portfolio was created as a way to showcase my projects and skills, serving as an introduction to my journey in frontend development. It was a stepping stone in learning how to present my work effectively and refine my approach to design and coding.",
       "full_description": [
         "My first portfolio was created as a way to showcase my projects and skills, serving as an introduction to my journey in frontend development. It was a stepping stone in learning how to present my work effectively and refine my approach to design and coding."
       ],
-      "img": "portfolio_V1/Portfolio_V1.png",
+      "img": "portfolio_version1/Portfolio_V1.png",
       "alt": "Project image of Vine&Vintage",
       "website": "https://vinevintages.jesperkjaergaard.dk/",
+
+      "img_folder": "portfolio_version1",
 
       "gal_desktop": ["hero.png", "skills.png", "portfolio.png", "footer.png"],
 
@@ -76,8 +109,9 @@
       "alt": "Project image of Loopstudio",
       "website": "https://loopstudios.jesperkjaergaard.dk/",
 
-      "gal_desktop": [],
-      "gal_mobile": [],
+      "img_folder": "loopstudio",
+      "gal_desktop": ["hero.png", "about.png", "our_creation.png"],
+      "gal_mobile": ["hero.png", "about.png", "footer.png"],
 
       "skills": ["HTML", "CSS", "Bootstrap"]
     }

@@ -5,6 +5,7 @@ import Icon from "../../components/UI/Icon";
 import { Link, useParams } from "react-router-dom";
 import Error from "../../pages/error/Error";
 import { useEffect } from "react";
+import Gallery from "../../components/Gallery";
 
 function Project_info() {
   useEffect(() => {
@@ -20,7 +21,6 @@ function Project_info() {
   const thumbnail_path = "/src/assets/projects/";
   const project_id = useParams<{ project_id: string }>();
 
-  //const project: number | null = test.project_id ? projects[parseInt(test.project_id)] : null;
   const project: (typeof projects)[number] | null = project_id.project_id
     ? projects[parseInt(project_id.project_id)]
     : null;
@@ -56,30 +56,6 @@ function Project_info() {
       />
     ) : null;
   });
-  
-  
-
-  const desktop_gallery = project.gal_desktop?.map(
-    (file_name: string, index: number) => (
-      <img
-        className="img__desktop"
-        key={index}
-        src={`/src/assets/projects/${project.title}/gallery/desktop/${file_name}`}
-        alt={`${project.title} gallery image`}
-      />
-    )
-  );
-  
-  const mobile_gallery = project.gal_mobile?.map(
-    (file_name: string, index: number) => (
-      <img
-        className="img__mobile"
-        key={index}
-        src={`/src/assets/projects/${project.title}/gallery/mobile/${file_name}`}
-        alt={`${project.title} gallery image`}
-      />
-    )
-  );
 
   return (
     <>
@@ -94,12 +70,11 @@ function Project_info() {
           src={`${thumbnail_path}${project.img}`}
           alt={project.alt}
         />
-
         <div className="project_info__content">
           <div className="project_info__header">
             <h1>{project.title}</h1>
             <Link to={project.website}>
-              <Button is_highlight>View website</Button>
+              <Button>View website</Button>
             </Link>
           </div>
 
@@ -115,10 +90,8 @@ function Project_info() {
           </div>
         </div>
 
-        <div className="project_info__gallery">
-          {desktop_gallery}
-          {mobile_gallery}
-        </div>
+        <Gallery project={project}/>
+     
       </section>
     </>
   );

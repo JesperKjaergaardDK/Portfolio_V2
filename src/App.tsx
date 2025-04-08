@@ -4,16 +4,18 @@ import About from "./components/sections/about/About";
 import Skills from "./components/sections/skills/Skills";
 import Projects from "./components/sections/projects/Projects";
 import Footer from "./components/sections/footer/Footer";
+import To_top from "./components/Return_to_top";
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <Hero></Hero>
-      <About></About>
-      <Skills></Skills>
-      <Projects></Projects>
-      <Footer></Footer>
+      <To_top/>
+      <Header/>
+      <Hero/>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Footer/>
     </>
   );
 }
