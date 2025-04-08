@@ -15,9 +15,7 @@ function Header() {
     <header>
       <div className="header">
         <div className="header__mobile">
-          <a href="#">
-            <img src={logo} alt="Jesper K logo" />
-          </a>
+          <img src={logo} alt="Jesper K logo" />
 
           <button type="button" onClick={handleToggleMenu}>
             <img src={dropdownIsOpen ? open_ham : close_ham} alt="mode" />
@@ -31,9 +29,7 @@ function Header() {
         )}
 
         <div className="header__desktop">
-          <a href="#">
-            <img src={logo} alt="Jesper K logo" />
-          </a>{" "}
+          <img src={logo} alt="Jesper K logo" />
           <nav className="header__nav">
             <Nav_list />
           </nav>

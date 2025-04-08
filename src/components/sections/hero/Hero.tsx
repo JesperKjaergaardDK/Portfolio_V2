@@ -1,5 +1,4 @@
 import Button from "../../UI/Button";
-import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -22,9 +21,10 @@ function Hero() {
           shifting my focus to Frontend Development to craft seamless and
           engaging user experiences
         </p>
-        <Link to="#projects">
+
+        <a href="#projects">
           <Button is_highlight>See My Creations</Button>
-        </Link>
+        </a>
       </div>
     </section>
   );
