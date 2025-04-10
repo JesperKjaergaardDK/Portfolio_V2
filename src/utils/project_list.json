@@ -10,7 +10,7 @@
         "Throughout the project, I worked on improving my planning process by creating more precise Figma designs, including wireframes, design choices, and structured ideas. However, I still encountered challenges, especially in determining how to structure data effectively and ensuring that my designs translated well into code. Some design elements worked better than expected, while others didn’t function as intended due to technical limitations or my own constraints. These challenges helped me learn and refine my problem-solving approach, making this portfolio an ongoing learning experience."
       ],
       "img": "portfolio_version2/portfolio_v2.png",
-      "alt": "Project image of Vine&Vintage",
+      "alt": "Project image of Portfolio V2",
       "website": "/",
 
       "img_folder": "portfolio_version2",
@@ -73,7 +73,7 @@
         "My first portfolio was created as a way to showcase my projects and skills, serving as an introduction to my journey in frontend development. It was a stepping stone in learning how to present my work effectively and refine my approach to design and coding."
       ],
       "img": "portfolio_version1/Portfolio_V1.png",
-      "alt": "Project image of Vine&Vintage",
+      "alt": "Project image of Portfolio V1",
       "website": "https://portfoliov1.jesperkjaergaard.dk/",
 
       "img_folder": "portfolio_version1",
