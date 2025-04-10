@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
 
-
 interface props {
   id: number;
   title: string;
@@ -12,7 +11,7 @@ interface props {
 }
 
 function Project(prop: props) {
-  const img_path = "src/assets/projects/";
+  const img_path = "/projects/";
 
   return (
     <div className="project">
@@ -31,7 +30,11 @@ function Project(prop: props) {
         </div>
       </div>
 
-      <img className="project__thumbnail" src={`${img_path}${prop.img}`} alt="" />
+      <img
+        className="project__thumbnail"
+        src={`${img_path}${prop.img}`}
+        alt={`${prop.title} thumbnail`}
+      />
     </div>
   );
 }

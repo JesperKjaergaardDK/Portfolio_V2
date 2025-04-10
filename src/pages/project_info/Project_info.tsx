@@ -4,13 +4,13 @@ import { combind_list } from "../../utils/skill_list.json";
 import Icon from "../../components/UI/Icon";
 import { Link, useParams } from "react-router-dom";
 import Error from "../../pages/error/Error";
-import { useEffect } from "react";
 import Gallery from "../../components/Gallery";
+import { useEffect } from "react";
 
 function Project_info() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+ useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: "instant"}); 
+ }, []);
 
   type skill = {
     icon_name: string;
@@ -18,9 +18,10 @@ function Project_info() {
     alt: string;
   };
 
-  const thumbnail_path = "/src/assets/projects/";
-  const project_id = useParams<{ project_id: string }>();
+  const thumbnail_path = "/projects/";
+  const project_id = useParams<{ project_id: string }>();  
 
+  //Getting specifc product from the id
   const project: (typeof projects)[number] | null = project_id.project_id
     ? projects[parseInt(project_id.project_id)]
     : null;
@@ -28,6 +29,7 @@ function Project_info() {
   if (!project) {
     return <Error />;
   }
+
 
   //Creates skill section
   //Go though all of the projects skills
@@ -64,12 +66,20 @@ function Project_info() {
           <Button>{"<- Go back"}</Button>
         </Link>
       </div>
+
       <section className="project_info">
+       {/*     <img src={testimg} alt="" />
+        <img src={testimg} alt="" />
+        <img src={testimg} alt="" />
+        <img src={testimg} alt="" />
+ */}
         <img
           className="project_info__thumbnail"
           src={`${thumbnail_path}${project.img}`}
           alt={project.alt}
         />
+   
+
         <div className="project_info__content">
           <div className="project_info__header">
             <h1>{project.title}</h1>
@@ -90,8 +100,7 @@ function Project_info() {
           </div>
         </div>
 
-        <Gallery project={project}/>
-     
+        <Gallery project={project} />
       </section>
     </>
   );
