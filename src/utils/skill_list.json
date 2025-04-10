@@ -3,22 +3,22 @@
     {
       "icon_name": "HTML",
       "src": "/icons/skills/icons8-html-64.png",
-      "alt": "Bootstrap"
+      "alt": "HTML"
     },
     {
       "icon_name": "CSS",
       "src": "/icons/skills/icons8-css-64.png",
-      "alt": "Bootstrap"
+      "alt": "CSS"
     },
     {
       "icon_name": "JavaScript",
       "src": "/icons/skills/icons8-js-64.png",
-      "alt": "Bootstrap"
+      "alt": "JavaScript"
     },
     {
       "icon_name": "TypeScript",
       "src": "/icons/skills/icons8-typescript-64.png",
-      "alt": "Bootstrap"
+      "alt": "TypeScript"
     },
     {
       "icon_name": "Bootstrap",
@@ -28,32 +28,32 @@
     {
       "icon_name": "SASS",
       "src": "/icons/skills/icons8-sass-64.png",
-      "alt": "Bootstrap"
+      "alt": "SASS"
     },
     {
       "icon_name": "React",
       "src": "/icons/skills/icons8-react-64.png",
-      "alt": "Bootstrap"
+      "alt": "React"
     },
     {
       "icon_name": "Figma",
       "src": "/icons/skills/icons8-figma-64.png",
-      "alt": "Bootstrap"
+      "alt": "Figma"
     },
     {
       "icon_name": "Illustrator",
       "src": "/icons/skills/icons8-adobe-illustrator-64.png",
-      "alt": "Bootstrap"
+      "alt": "Illustrator"
     },
     {
       "icon_name": "Photoshop",
       "src": "/icons/skills/icons8-adobe-photoshop-64.png",
-      "alt": "Bootstrap"
+      "alt": "Photoshop"
     },
     {
       "icon_name": "Indesign",
       "src": "/icons/skills/icons8-adobe-indesign-64.png",
-      "alt": "Bootstrap"
+      "alt": "Indesign"
     }
   ],
 
@@ -61,22 +61,22 @@
     {
       "icon_name": "HTML",
       "src": "/icons/skills/icons8-html-64.png",
-      "alt": "Bootstrap"
+      "alt": "HTML"
     },
     {
       "icon_name": "CSS",
       "src": "/icons/skills/icons8-css-64.png",
-      "alt": "Bootstrap"
+      "alt": "CSS"
     },
     {
       "icon_name": "JavaScript",
       "src": "/icons/skills/icons8-js-64.png",
-      "alt": "Bootstrap"
+      "alt": "JavaScript"
     },
     {
       "icon_name": "TypeScript",
       "src": "/icons/skills/icons8-typescript-64.png",
-      "alt": "Bootstrap"
+      "alt": "TypeScript"
     },
     {
       "icon_name": "Bootstrap",
@@ -86,12 +86,12 @@
     {
       "icon_name": "SASS",
       "src": "/icons/skills/icons8-sass-64.png",
-      "alt": "Bootstrap"
+      "alt": "SASS"
     },
     {
       "icon_name": "React",
       "src": "/icons/skills/icons8-react-64.png",
-      "alt": "Bootstrap"
+      "alt": "React"
     }
   ],
 
@@ -99,22 +99,22 @@
     {
       "icon_name": "Figma",
       "src": "/icons/skills/icons8-figma-64.png",
-      "alt": "Bootstrap"
+      "alt": "Figma"
     },
     {
       "icon_name": "Illustrator",
       "src": "/icons/skills/icons8-adobe-illustrator-64.png",
-      "alt": "Bootstrap"
+      "alt": "Illustrator"
     },
     {
       "icon_name": "Photoshop",
       "src": "/icons/skills/icons8-adobe-photoshop-64.png",
-      "alt": "Bootstrap"
+      "alt": "Photoshop"
     },
     {
       "icon_name": "Indesign",
       "src": "/icons/skills/icons8-adobe-indesign-64.png",
-      "alt": "Bootstrap"
+      "alt": "Indesign"
     }
   ]
 }

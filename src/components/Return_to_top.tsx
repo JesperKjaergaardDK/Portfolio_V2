@@ -3,8 +3,8 @@ import scrollToTop from '../utils/scroll_to_top';
 
 function Return_to_top() {
   return (
-    <button onClick={scrollToTop}>
-      <img className="return_to_top" src={return_to_top} alt="" />
+    <button className="return_to_top" onClick={scrollToTop}>
+      <img src={return_to_top} alt="Scroll back to top" />
     </button>
   );
 }

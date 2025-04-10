@@ -68,11 +68,7 @@ function Project_info() {
       </div>
 
       <section className="project_info">
-       {/*     <img src={testimg} alt="" />
-        <img src={testimg} alt="" />
-        <img src={testimg} alt="" />
-        <img src={testimg} alt="" />
- */}
+
         <img
           className="project_info__thumbnail"
           src={`${thumbnail_path}${project.img}`}
