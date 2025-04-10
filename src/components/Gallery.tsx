@@ -51,7 +51,7 @@ function Gallery({ project }: Props) {
   return (
     <div className="project_info__gallery">
       {build_gallery().desktop_gallery}
-      {build_gallery().desktop_gallery}
+      {build_gallery().mobile_gallery}
     </div>
   );
 }
