@@ -22,7 +22,7 @@
 }
 
 .project_info {
-  @include col.flex-direction(map.get(col.$spacing, "xl"));
+  @include col.flex-direction(map.get(col.$spacing, "xxl"));
 
   &__thumbnail {
     @include col.white_border();
